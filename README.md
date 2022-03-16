@@ -1,11 +1,11 @@
 <h1 align="center">Hi 👋, I'm Sue Darby</h1>
 <h3 align="center">A passionate frontend developer from Alaska</h3>
 
-- 🔭 I’m currently working on [Sewing Project Manager](https://github.com/suedarby/SewingProjectManager)
+- 🔭 I’m currently working on my [Sewing Project Manager](https://github.com/suedarby/SewingProjectManager), a side project to help manage sewing, embroidery and other crafting projects.
 
-- 🌱 I’m currently learning **Full Stack Development**
+- 🌱 I’m currently learning **Software Development**. via Entity Academy. I will graduate with honors in June of 2022.
 
-- 📄 Know about my experiences [https://github.com/suedarby/Sue-Darby-Portfolio](https://github.com/suedarby/Sue-Darby-Portfolio)
+- 📄 Learn about my experiences [https://github.com/suedarby/Sue-Darby-Portfolio](https://github.com/suedarby/Sue-Darby-Portfolio), this GitHub Repository. 
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
