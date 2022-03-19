@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Sue Darby</h1>
-<h3 align="center">A passionate frontend developer from Alaska</h3>
+<h3 align="center">A passionate technical writer and frontend developer from Alaska</h3>
 
 - 🔭 I’m currently working on my [Sewing Project Manager](https://github.com/suedarby/SewingProjectManager), a side project to help manage sewing, embroidery and other crafting projects.
 
