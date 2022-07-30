@@ -1,0 +1,72 @@
+Palmer, AlaskaSue Darby
+Technical Writer907-707-5654
+sue.a.darby@gmail.com
+http://www.sue-a-darby.com
+https://www.linkedin.com/in/suedarbyExperienceTechnical Writer
+Credit Union 1 ~ Remote, Alaska ~ Jan 2022~ Feb 2022 ~ Contract
+Contract technical writer to work on banking backlog writing and consulting work.
+Tools & Requirements:, Audacity, OneNote, excellent written and verbal communication skills, keen eye for detail, various cloud database systems, SaaS, O365, Teams, SharePoint,, Visio, Word
+* Procedural documentation, manage document life cycle
+* Compile and format a variety of documents
+* Manage multiple projects simultaneously while staying on time and under budget
+* Use and document a variety of programs and systems such as
+o Mobile truck ATM
+o Internal phone system
+o Specific use cases of AudacityData Analyst
+Launch Consulting ~ Remote, Washington ~ Nov 2018 ~ Nov 2019  (12 mo)
+As part of a team responsible for correctly parenting public sector and commercial accounts. 
+Tools & Requirements: Excel, Outlook, Pivot Tables, charts, graphs, Power BI Reporting, excellent written and verbal communication skills, keen eye for detail, various cloud database systems, SaaS, O365, Teams, SharePoint, PowerBI
+* Responsible for the converting data from source to destination system(s)
+* Performing troubleshooting, root cause analysis, and resolving data integrity issues
+* Assist clients with technical issues and escalate to technical team if required
+* Conducting detailed research and analysis required to ensure compliance with established business rules. 
+o Use of multiple internal systems including PowerBI, Excel, MSRA, Calc and SDS for reports and processing. 
+o Processed approximately 300 accounts per month.Senior Services Data Technician 
+State of Alaska ~ Anchorage, AK ~ May 2008 ~ Dec 2017 (114 mo)
+Hardware and Software Testing
+* UAT testing of new database system following written instructions to find bugs, going off script to experiment and find unknown bugs and report results to development team
+* Translate requirements for database from simple SharePoint Application Tracking System (see below) to robust database system providing end points and needed data points
+* Test new installs and upgrades of software such as MS Office 2003 to MS Office 2007 to MS Office 2015 and providing team support when rolled out to team
+* Test new build images when moving from Windows XP to Windows 7; able to break the new build and find bugs in settings in less than a day of use
+Settings Compliance & Compliance Tool
+Provided project planning & management to develop a single tool to capture data, aggregate, and generate individualized notices, programming a custom macro.
+Tools & Requirements: business case writing, Microsoft Office, Visio, Adobe DC, VB.net, time management, business requirements and metrics, define scope, write documentation and procedural materials for multiple audiences, Excel reporting, project management, UAT Testing, new software updates and image testing, software and code debugging
+* Document the processes, best practices and facilitated team training of both technical and non-technical end users
+o Brought the behind schedule project current with the workflow
+o $1,500 saved in postage, 2-4 cases of paper & processing time
+o Time savings for team of 66%
+Application Tracking System 
+Created an interim data tracking system using SharePoint to measure the time frames for processing applications. 
+Tools & Requirements: business case writing, VB.net, SharePoint, Excel, HTML, CSS, UML, pivot tables, conditional formatting, filters, lean agile methodologies, time management, communication, proven ability to handle multiple projects simultaneously, with an eye for prioritization, project management, define scope
+* Application support for the team's use and updating the system
+o Program in VB.net, edit and maintain complex checklist system for daily use
+o Team efficacy improvement 74%
+o Trained team to use tool through written documentation and hands-on assistance, troubleshooting the system as site adminWebmaster, Programmer & Technical Writer 
+Webmaster, Programmer & Technical Writer ~ iA3 ~ Remote, Alaska ~ Oct 2015 ~ Dec 2016 ~ Contractor
+Recruited to work on iA3's website during the start-up phase and grow into not only website management and content development but programming dashboards with Angular 2 and contributing to the technical documentation of the iA3 EdgeBrain cloud system.
+Tools & Requirements: Google Suite, EdgeBrain Industrial Internet of Things (IIOT) water monitoring device, Angular2, WordPress, video & teleconferencing, technical documentation, website programming, IIOT device documentation, Google Analytics, Google Tag Manager
+* Document the process to install device on remote water system
+o Assist in writing Business Plan and policies
+o Gather requirements from SME
+o Write technical copy for websiteTechnical Writer/Webmaster/Author
+Sue's Tiny Costumes ~ California/Oregon/Alaska ~ Sept 1995 ~ Present ~ Remote
+Tools & Requirements: Google Suite, Google Analytics, Google Tag Manager, WordPress, video & teleconferencing, software testing and code debugging, cross browser compatibility testing, SEO, Word, Visio, VSCode, HTML, CSS, JavaScript, project planning and management, database admin, time management, communication, proven ability to handle multiple projects simultaneously, with an eye for prioritization, project management, multi-site management and updates
+* Pattern Making for Dolls ~ Registration Number TXu001082134 
+* Pattern Drafting for Miniatures ~ Registration Number TXu001082114 
+* International Doll Magazine, Pattern Consultant 6 published patterns 
+* Dolls In Miniature - article 
+* Doll Castle News - article 
+* Alaska State Fair 2005 1st Place Little Bo Peep and her Sheep (Kitty Collier & Tiny Betsy)Sewing Project Manager
+Project Manager, Software Developer, Technical Writer ~ July 2020 ~March 2022
+Solving the problem of locating supplies for sewing, embroidery, and crafts to reduce over buying through a tracking system for projects
+Tools & Requirements: Word, Visio, VSCode, MySQL Workbench, WAMP Server, MySQL, PHP, HTML, CSS, JavaScript, JSON, XML, project planning and management, database admin, programming, software documentation, Node.js, React.js, Vue.js, SDLC, GitHub, software testing and code debugging, cross browser compatibility testing, SEO, endpoint management, API integration, Handlebars, Axios, Express, NoSQL, MongoDB, Postman
+* Concept to implementation project management and programming
+* Design, layout and mapping of all pages via Visio, HTML and CSS
+Design and creation of database backend for dynamic pagesSecretary of the Board, Customer Support, Technical Support 
+Alaska Collaborative for Telehealth and Telemedicine ~ Remote, Alaska ~ Oct 2017 ~ March 2022 ~ Volunteer
+Part of the Board of Directors for managing the documentation such as meeting minutes and organizing data.
+Tools & Requirements: Google Suite, Google Analytics, Google Tag Manager, WordPress, LastPass, LifeSize Teleconference, information gathering, content management, client services, technical documentation, website programming, design, UI, and help refine content, procedural materials for multiple audiences
+* Information management for both board materials and website updates
+o Direct correspondence or answer questions via chat, email & social media
+o Work with the board to develop policies and procedures along with changes
+Compile minutes, track documents and ensure compliance with local regulations for website requirements for reportingEducationWozU Software Development ~ Honor Roll ~ Nov 2021~Jun 2022SnagIt 2021 Tech Smith https://verify.skilljar.com/c/pf37fn9u2q27 Microsoft Office Master CertificationLinkedIn Learning, Udemy, SitePointMultiple topics ~ Career Development, WordPress, PHP, HTML, CSS, JavaScript, Node, React, jQuery, Instructional Design, Git, Drupal, Agile, Statistics, Python, Markdown, API, Technical Writing, Project Management, Ajax, MySQL, Salesforce, Asana, NPM and many moreEdXAnalyzing and Visualizing Data with Excel ~ Microsoft ~ DAT206xAnalyzing and Visualizing Data with Power BI ~ Microsoft~ DAT207xCharter College ~ Alpha Beta Kappa, Dean's List 2006-2009Bachelors of Science Business Management and Information TechnologyBachelors of Science Business ManagementAssociate of Science Computer Science: Concentration in Business ApplicationsAssociate of Science Business Management Practice
