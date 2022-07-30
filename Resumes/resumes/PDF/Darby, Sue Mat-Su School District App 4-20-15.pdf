@@ -1,0 +1,3163 @@
+%PDF-1.0
+1 0 obj
+<<
+/Type /Catalog
+/Pages 3 0 R
+/Outlines 2 0 R
+/PageMode /UseOutlines
+/PageLayout /OneColumn
+>>
+endobj
+%%x jobPagesSQL: select Category, AdditionalTitle, Years, Location, id, 'Yes' As OpenStatus, DateLastSubmitted from AppJobCodes a  inner join JP_OpenPositions b on a.JobCode = b.id  where IsNull(SelectionActive, '') = 'True' and (IsCurrentlyOpenInternal = 1 OR IsCurrentlyOpenExternal = 1) and AppNo = 8467 order by OpenStatus DESC, category, additionaltitle, location
+%% ** Session/Perm Info ** 
+%% JobCode: 
+%% Transaction: 2819511
+%% CatPerms: 
+%% JobIDPerms: 
+%% Session Standard? 
+%% Session Userlevel? 
+%% Session RoutingsOnly? 
+%% Session.SessionID? 675028560
+%% jobPagesSQL: select id, Category, Title from JP_ReqStatus where (IsCurrentlyOpenInternal = 1 OR IsCurrentlyOpenExternal = 1) and id in (select Cast(jobcode as VARCHAR) as JobCode from AppJobCodes where SelectionActive = 'True' AND appno = 8467)
+%% jobPagesSQL: select distinct Type, Specialty from AppJobPools where SelectionActive = 'True' AND appno = 8467
+%% jcprsSQL: select distinct Page from __System_TraitFields AS SetupTraitFields where Page in (select 'JobID' + cast(id as varchar) from JP_ReqStatus where (IsCurrentlyOpenInternal = 1 OR IsCurrentlyOpenExternal = 1) and id in (select jobcode from AppJobCodes where SelectionActive = 'True' AND appno = 8467))
+%% PagesSQL: select id,PageOrder,Title,PrintLocation,Parameters,Condition from __System_Pages where 1=2  or id in(select PageId from SetupPageAssignments where AssignmentType = 'JobID' and AssignedTo in ('3193','3194','0') and LangId in ('eng')  AND  OnExternal = 1 )  or id in(select PageId from SetupPageAssignments where AssignmentType = 'PoolCategory' and AssignedTo in ('Classified Positions','0') and LangId in ('eng')  AND  OnExternal = 1 )  or id in(select PageId from SetupPageAssignments where AssignmentType = 'PoolPosition' and AssignedTo in ('Classified Positions : IT Support Specialist','Classified Positions : IT Network Specialist','Classified Positions : IT Technical Writer','0') and LangId in ('eng')  AND  OnExternal = 1 )  order by PageOrder
+% execute file: /OLACommon/printing/appParts/6educationWithDates.asp
+%% Location, Title:/OLACommon/printing/appParts/6educationWithDates.aspEducation
+% execute file: /OLACommon/printing/appParts/6educationcont.asp
+%% Location, Title:/OLACommon/printing/appParts/6educationcont.aspEducation (cont.)
+% execute file: /OLACommon/printing/appParts/5experience2.asp
+%% Location, Title:/OLACommon/printing/appParts/5experience2.aspExperience
+% execute file: /OLACommon/printing/appParts/12referencesRel.asp
+%% Location, Title:/OLACommon/printing/appParts/12referencesRel.aspReferences
+%  invoke Main88TraitsSkills: /OLACommon/printing/appParts/88traits-skills.asp
+%Gettings Parms
+%% SuperUser? 
+%% CustomPermission : 
+%% Not Hidden! 
+%AppTraitSQL: CacheView '__System_TraitFields', 3600; select * from __System_TraitFields_Cached a left join (     select TraitID, Value, ExtendedValue from AppTraits where id in ( 	      select min(at.id) as FirstAnswerID from __System_TraitFields_Cached sf left join (select * from AppTraits where AppTraits.appno = 8467) at on sf.id = at.TraitID where Page = '18' group by sf.id         )      ) b on a.id = b.TraitID where Page = '18' order by SortOrder 
+%Start of Traits Page
+%End of Trait Page
+%EndTableColumns
+%% Location, Title:/OLACommon/printing/appParts/88traits-skills.aspAdditional Information
+%  invoke Main88TraitsSkills: /OLACommon/printing/appParts/88traits-skills.asp
+%Gettings Parms
+%% SuperUser? 
+%% CustomPermission : 
+%% Not Hidden! 
+%AppTraitSQL: CacheView '__System_TraitFields', 3600; select * from __System_TraitFields_Cached a left join (     select TraitID, Value, ExtendedValue from AppTraits where id in ( 	      select min(at.id) as FirstAnswerID from __System_TraitFields_Cached sf left join (select * from AppTraits where AppTraits.appno = 8467) at on sf.id = at.TraitID where Page = '22' group by sf.id         )      ) b on a.id = b.TraitID where Page = '22' order by SortOrder 
+%Start of Traits Page
+%% MultiLineText is starting...
+%% No Center
+%% MultiLineText is done...
+%% MultiLineText is starting...
+%% No Center
+%% MultiLineText is done...
+%% MultiLineText is starting...
+%% No Center
+%% MultiLineText is done...
+%% MultiLineText is starting...
+%% No Center
+%% MultiLineText is done...
+%% MultiLineText is starting...
+%% No Center
+%% MultiLineText is done...
+%% MultiLineText is starting...
+%% No Center
+%% MultiLineText is done...
+%End of Trait Page
+%EndTableColumns
+%% Location, Title:/OLACommon/printing/appParts/88traits-skills.aspDisclosures (Non-Certified)
+%  invoke Main88TraitsSkills: /OLACommon/printing/appParts/88traits-skills.asp
+%Gettings Parms
+%% SuperUser? 
+%% CustomPermission : 
+%% Not Hidden! 
+%AppTraitSQL: CacheView '__System_TraitFields', 3600; select * from __System_TraitFields_Cached a left join (     select TraitID, Value, ExtendedValue from AppTraits where id in ( 	      select min(at.id) as FirstAnswerID from __System_TraitFields_Cached sf left join (select * from AppTraits where AppTraits.appno = 8467) at on sf.id = at.TraitID where Page = '20' group by sf.id         )      ) b on a.id = b.TraitID where Page = '20' order by SortOrder 
+%Start of Traits Page
+%% MultiLineText is starting...
+%% No Center
+%% MultiLineText is done...
+%% MultiLineText is starting...
+%% No Center
+%% MultiLineText is done...
+%% MultiLineText is starting...
+%% No Center
+%% MultiLineText is done...
+%% MultiLineText is starting...
+%% No Center
+%% MultiLineText is done...
+%% MultiLineText is starting...
+%% No Center
+%% MultiLineText is done...
+%% MultiLineText is starting...
+%% No Center
+%% MultiLineText is done...
+%End of Trait Page
+%EndTableColumns
+%% Location, Title:/OLACommon/printing/appParts/88traits-skills.aspLegal Information
+%% Location, Title:EEO Form
+
+14 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Contents [ 16 0 R 15 0 R ]
+/Annots 17 0 R>>
+endobj
+15 0 obj
+<< /Length 0 >>
+stream
+BT
+/Times-Roman 10 Tf
+12 TL
+1 0 0 1 29 767 Tm
+/Helvetica-Bold 14 Tf
+16.8 TL
+1 0 0 1 83.37 767 Tm
+(Matanuska-Susitna Borough School District Online Application     ) '
+1 0 0 1 29 750.2 Tm
+1 0 0 1 25 750.2 Tm
+/Times-Roman 10 Tf
+12 TL
+1 0 0 1 29 750.2 Tm
+(Darby, Sue   ) '
+1 0 0 1 450.5 750.2 Tm
+(Date Started: 4/18/2015  ) '
+1 0 0 1 250 40 Tm
+(Page 1 of  7)'
+/Times-Roman 8 Tf
+9.6 TL
+1 0 0 1 30 37 Tm
+(Generated at 4/20/2015 11:23:21 PM Central)'
+1 0 0 1 29 738.2 Tm
+/Times-Roman 10 Tf
+12 TL
+1 0 0 1 29 726.2 Tm
+1 0 0 1 25 720.2 Tm
+/Helvetica-Bold 12 Tf
+14.4 TL
+(Personal Data  ) '
+1 0 0 1 29 705.8 Tm
+1 0 0 1 29 719.8 Tm
+1 0 0 1 25 713.8 Tm
+/Times-Roman 10 Tf
+12 TL
+1 0 0 1 29 701.8 Tm
+1 0 0 1 29 701.8 Tm
+/Helvetica-Bold 10 Tf
+12 TL
+(Name:  ) '
+/Times-Roman 12 Tf
+14.4 TL
+1 0 0 1 169.5 701.8 Tm
+(Sue  ) '
+1 0 0 1 310 701.8 Tm
+1 0 0 1 450.5 701.8 Tm
+(Darby  ) '
+/Times-Roman 8 Tf
+9.6 TL
+1 0 0 1 169.5 684.4 Tm
+(\(First\)  ) '
+1 0 0 1 310 684.4 Tm
+(\(Middle Initial\)  ) '
+1 0 0 1 450.5 684.4 Tm
+(\(Last\)  ) '
+1 0 0 1 29 674.8 Tm
+1 0 0 1 160.47 671.8 Tm
+(Other name\(s\) under which transcripts, certificates, and former applications may be listed:  ) '
+1 0 0 1 29 662.2 Tm
+1 0 0 1 25 662.2 Tm
+1 0 0 1 29 659.2 Tm
+/Helvetica-Bold 10 Tf
+12 TL
+(Other:  ) '
+/Times-Roman 10 Tf
+12 TL
+1 0 0 1 169.5 659.2 Tm
+(Sue  ) '
+1 0 0 1 310 659.2 Tm
+1 0 0 1 450.5 659.2 Tm
+(Rash  ) '
+/Times-Roman 8 Tf
+9.6 TL
+1 0 0 1 169.5 647.2 Tm
+(\(First\)  ) '
+1 0 0 1 310 647.2 Tm
+(\(Middle Initial\)  ) '
+1 0 0 1 450.5 647.2 Tm
+(\(Last\)  ) '
+1 0 0 1 29 637.6 Tm
+1 0 0 1 29 637.6 Tm
+/Helvetica-Bold 10 Tf
+12 TL
+(Email Address:  ) '
+1 0 0 1 169.5 637.6 Tm
+/Times-Roman 10 Tf
+12 TL
+(sue@sue-a-darby.com  ) '
+1 0 0 1 29 625.6 Tm
+1 0 0 1 25 619.6 Tm
+/Helvetica-Bold 12 Tf
+14.4 TL
+(Postal Address  ) '
+1 0 0 1 29 605.2 Tm
+1 0 0 1 29 619.2 Tm
+1 0 0 1 25 613.2 Tm
+/Times-Roman 10 Tf
+12 TL
+1 0 0 1 29 601.2 Tm
+1 0 0 1 29 601.2 Tm
+/Helvetica-Bold 10 Tf
+12 TL
+(Permanent Address  ) '
+1 0 0 1 29 589.2 Tm
+1 0 0 1 29 589.2 Tm
+/Times-Roman 10 Tf
+12 TL
+(Number & Street:  ) '
+1 0 0 1 169.5 589.2 Tm
+(900 Josh Dr  ) '
+1 0 0 1 29 577.2 Tm
+/Times-Roman 10 Tf
+12 TL
+(Apt. Number:  ) '
+1 0 0 1 169.5 577.2 Tm
+1 0 0 1 29 565.2 Tm
+(City:  ) '
+1 0 0 1 169.5 565.2 Tm
+(Palmer  ) '
+1 0 0 1 29 553.2 Tm
+(State/Province:  ) '
+1 0 0 1 169.5 553.2 Tm
+(AK  ) '
+1 0 0 1 29 541.2 Tm
+(Zip/Postal Code:  ) '
+1 0 0 1 169.5 541.2 Tm
+(99645  ) '
+1 0 0 1 29 529.2 Tm
+(Country:  ) '
+1 0 0 1 169.5 529.2 Tm
+(United States of America  ) '
+1 0 0 1 29 517.2 Tm
+(Daytime Phone:  ) '
+1 0 0 1 169.5 517.2 Tm
+(\(907\) 707-5654  ) '
+1 0 0 1 29 505.2 Tm
+(Home/Cell Phone:  ) '
+1 0 0 1 169.5 505.2 Tm
+(\(907\) 746-5978  ) '
+1 0 0 1 29 493.2 Tm
+1 0 0 1 25 487.2 Tm
+/Helvetica-Bold 12 Tf
+14.4 TL
+(Employment Desired  ) '
+1 0 0 1 29 472.8 Tm
+1 0 0 1 29 486.8 Tm
+1 0 0 1 25 480.8 Tm
+/Times-Roman 10 Tf
+12 TL
+1 0 0 1 29 468.8 Tm
+1 0 0 1 29 468.8 Tm
+/Helvetica 12 Tf
+14.4 TL
+(Open Vacancy Desired:  ) '
+1 0 0 1 422.4 468.8 Tm
+/Helvetica-Bold 8 Tf
+9.6 TL
+1 0 0 1 422.4 464.8 Tm
+(Date Last )'
+(Submitted  ) '
+1 0 0 1 506.7 468.8 Tm
+/Helvetica-Bold 8 Tf
+9.6 TL
+1 0 0 1 506.7 464.8 Tm
+(Experience in )'
+(Similar Positions  ) '
+1 0 0 1 29 445.6 Tm
+1 0 0 1 29 445.6 Tm
+/Times-Roman 10 Tf
+12 TL
+1 0 0 1 29 445.6 Tm
+(JobID: 3193  ) '
+1 0 0 1 113.3 445.6 Tm
+()'
+() Tj
+/Times-Bold 10 Tf
+12 TL
+(Classified Positions:) Tj
+/Times-Roman 10 Tf
+12 TL
+( 1.0 FTE IT Support Specialist ) Tj
+( at Information ) Tj
+T*
+(Technology Department ) Tj
+1 0 0 1 422.4 445.6 Tm
+(Not Submitted  ) '
+1 0 0 1 506.7 445.6 Tm
+(1 year  ) '
+1 0 0 1 29 421.6 Tm
+(JobID: 3194  ) '
+1 0 0 1 113.3 421.6 Tm
+()'
+() Tj
+/Times-Bold 10 Tf
+12 TL
+(Classified Positions:) Tj
+/Times-Roman 10 Tf
+12 TL
+( 1.0 FTE IT Support Specialist ) Tj
+( at Information ) Tj
+T*
+(Technology Department ) Tj
+1 0 0 1 422.4 421.6 Tm
+(Not Submitted  ) '
+1 0 0 1 506.7 421.6 Tm
+(1 year  ) '
+1 0 0 1 29 397.6 Tm
+1 0 0 1 29 385.6 Tm
+1 0 0 1 29 385.6 Tm
+/Helvetica 12 Tf
+14.4 TL
+(Position Desired:  ) '
+1 0 0 1 506.7 385.6 Tm
+/Helvetica-Bold 8 Tf
+9.6 TL
+1 0 0 1 506.7 381.6 Tm
+(Experience in )'
+(Similar Positions  ) '
+1 0 0 1 29 362.4 Tm
+1 0 0 1 29 364.4 Tm
+1 0 0 1 29 364.4 Tm
+/Times-Roman 10 Tf
+12 TL
+1 0 0 1 29 364.4 Tm
+/Times-Bold 10 Tf
+12 TL
+(Classified Positions  ) '
+/Times-Roman 10 Tf
+12 TL
+1 0 0 1 29 352.4 Tm
+( 1.   IT Network Specialist  ) '
+1 0 0 1 506.7 352.4 Tm
+(-  ) '
+1 0 0 1 29 340.4 Tm
+( 2.   IT Support Specialist  ) '
+1 0 0 1 506.7 340.4 Tm
+(1 year  ) '
+1 0 0 1 29 328.4 Tm
+( 3.   IT Technical Writer  ) '
+1 0 0 1 506.7 328.4 Tm
+(5 years  ) '
+1 0 0 1 29 304.4 Tm
+1 0 0 1 29 292.4 Tm
+1 0 0 1 25 286.4 Tm
+/Helvetica-Bold 12 Tf
+14.4 TL
+(Education  ) '
+1 0 0 1 29 272 Tm
+1 0 0 1 29 286 Tm
+1 0 0 1 25 280 Tm
+/Times-Roman 10 Tf
+12 TL
+1 0 0 1 29 268 Tm
+(Please tell us about your educational background beginning with the most recent.  ) '
+1 0 0 1 29 244 Tm
+1 0 0 1 29 239 Tm
+1 0 0 1 29 239 Tm
+/Times-Bold 10 Tf
+12 TL
+(High School Attended:  ) '
+1 0 0 1 169.5 239 Tm
+/Times-Roman 10 Tf
+12 TL
+(Fairfield High, Fairfield, CA  ) '
+1 0 0 1 29 227 Tm
+/Times-Bold 10 Tf
+12 TL
+(Graduation Status:  ) '
+1 0 0 1 169.5 227 Tm
+/Times-Roman 10 Tf
+12 TL
+(H.S. Diploma  ) '
+1 0 0 1 29 215 Tm
+1 0 0 1 29 203 Tm
+/Helvetica-Bold 12 Tf
+14.4 TL
+1 0 0 1 150.34 203 Tm
+(Colleges, Universities and Technical Schools Attended:  ) '
+1 0 0 1 29 188.6 Tm
+1 0 0 1 25 188.6 Tm
+1 0 0 1 25 182.6 Tm
+/Helvetica-Bold 12 Tf
+14.4 TL
+(Education Continued  ) '
+1 0 0 1 29 168.2 Tm
+1 0 0 1 29 182.2 Tm
+1 0 0 1 25 176.2 Tm
+/Times-Roman 10 Tf
+12 TL
+1 0 0 1 29 164.2 Tm
+1 0 0 1 29 164.2 Tm
+/Times-Bold 10 Tf
+12 TL
+(Name and location  ) '
+1 0 0 1 135.78 164.2 Tm
+(Dates Attended:  ) '
+(From - To  ) '
+1 0 0 1 220.08 164.2 Tm
+/Times-Bold 8 Tf
+9.6 TL
+(Major area of study and )'
+(number of semester hours )'
+1 0 0 1 321.24 164.2 Tm
+(Minor area of study and )'
+(number of semester hours )'
+1 0 0 1 422.4 164.2 Tm
+/Times-Bold 10 Tf
+12 TL
+(Advanced )'
+(Degree  ) '
+1 0 0 1 472.98 164.2 Tm
+/Times-Bold 8 Tf
+9.6 TL
+(Date Conferred or )'
+(Expected  ) '
+1 0 0 1 551.66 164.2 Tm
+(Graduated )'
+1 0 0 1 29 140.2 Tm
+/Times-Roman 10 Tf
+12 TL
+(AK - Charter College  ) '
+1 0 0 1 135.78 140.2 Tm
+(04/2006  ) '
+(05/2009  ) '
+1 0 0 1 220.08 140.2 Tm
+(Business Management )'
+(& Tecnology  ) '
+(Hrs: 193  ) '
+1 0 0 1 321.24 140.2 Tm
+(Business Management )'
+(Practice  ) '
+(Hrs: 205  ) '
+1 0 0 1 422.4 140.2 Tm
+(N/A  ) '
+1 0 0 1 472.98 140.2 Tm
+(06/2009  ) '
+1 0 0 1 551.66 140.2 Tm
+1 0 0 1 29 104.2 Tm
+/Times-Roman 10 Tf
+12 TL
+(Solano Community )'
+(College  ) '
+1 0 0 1 135.78 104.2 Tm
+(08/1995  ) '
+(05/1997  ) '
+1 0 0 1 220.08 104.2 Tm
+(Fashion Design )'
+(Certificate  ) '
+(Hrs:  ) '
+1 0 0 1 321.24 104.2 Tm
+(Hrs:  ) '
+1 0 0 1 422.4 104.2 Tm
+1 0 0 1 472.98 104.2 Tm
+(05/1997  ) '
+1 0 0 1 551.66 104.2 Tm
+1 0 0 1 29 68.2 Tm
+ET
+endstream
+endobj
+16 0 obj
+<< /Length 0 >>
+stream
+0.2 w
+25 750.2 m
+587 750.2 l
+S
+1 w
+25 736.2 m
+587 736.2 l
+S
+1.2 w
+25 702.8 m
+587 702.8 l
+S
+1.2 w
+25 602.2 m
+587 602.2 l
+S
+1.2 w
+25 469.8 m
+587 469.8 l
+S
+1.2 w
+25 269 m
+587 269 l
+S
+1.2 w
+25 165.2 m
+587 165.2 l
+S
+0.2 w
+25 164.2 m
+587 164.2 l
+S
+0.2 w
+25 138.866666666667 m
+587 138.866666666667 l
+S
+0.2 w
+25 102.533333333333 m
+587 102.533333333333 l
+S
+0.2 w
+25 66.5333333333334 m
+587 66.5333333333334 l
+S
+0.2 w
+25 164.2 m
+25 66.5333333333334 l
+S
+0.2 w
+131.78 164.2 m
+131.78 66.5333333333334 l
+S
+0.2 w
+216.08 164.2 m
+216.08 66.5333333333334 l
+S
+0.2 w
+317.24 164.2 m
+317.24 66.5333333333334 l
+S
+0.2 w
+418.4 164.2 m
+418.4 66.5333333333334 l
+S
+0.2 w
+468.98 164.2 m
+468.98 66.5333333333334 l
+S
+0.2 w
+547.66 164.2 m
+547.66 66.5333333333334 l
+S
+0.2 w
+587 164.2 m
+587 66.5333333333334 l
+S
+endstream
+endobj
+
+17 0 obj
+[ ]
+endobj
+
+100000 0 obj <<
+/Parent 2 0 R
+/Dest [14 0 R /XYZ null 792 null]
+/Title (-- Darby, Sue --)
+/Next 100001 0 R
+>>
+endobj
+100001 0 obj <<
+/Parent 2 0 R
+/Dest [14 0 R /XYZ null 726.2 null]
+/Title (Personal Data)
+/Prev 100000 0 R
+/Next 100002 0 R
+>>
+endobj
+100002 0 obj <<
+/Parent 2 0 R
+/Dest [14 0 R /XYZ null 625.6 null]
+/Title (Postal Address)
+/Prev 100001 0 R
+/Next 100003 0 R
+>>
+endobj
+100003 0 obj <<
+/Parent 2 0 R
+/Dest [14 0 R /XYZ null 493.2 null]
+/Title (Employment Desired)
+/Prev 100002 0 R
+/Next 100004 0 R
+>>
+endobj
+100004 0 obj <<
+/Parent 2 0 R
+/Dest [14 0 R /XYZ null 292.4 null]
+/Title (Education)
+/Prev 100003 0 R
+/Next 100005 0 R
+>>
+endobj
+100005 0 obj <<
+/Parent 2 0 R
+/Dest [14 0 R /XYZ null 188.6 null]
+/Title (Education Continued)
+/Prev 100004 0 R
+/Next 100006 0 R
+>>
+endobj
+
+18 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Contents [ 20 0 R 19 0 R ]
+/Annots 21 0 R>>
+endobj
+19 0 obj
+<< /Length 0 >>
+stream
+BT
+/Times-Roman 10 Tf
+12 TL
+1 0 0 1 29 767 Tm
+/Helvetica-Bold 14 Tf
+16.8 TL
+1 0 0 1 83.37 767 Tm
+(Matanuska-Susitna Borough School District Online Application     ) '
+1 0 0 1 29 750.2 Tm
+1 0 0 1 25 750.2 Tm
+/Times-Roman 10 Tf
+12 TL
+1 0 0 1 29 750.2 Tm
+(Darby, Sue   ) '
+1 0 0 1 450.5 750.2 Tm
+(Date Started: 4/18/2015  ) '
+1 0 0 1 250 40 Tm
+(Page 2 of  7)'
+/Times-Roman 8 Tf
+9.6 TL
+1 0 0 1 30 37 Tm
+(Generated at 4/20/2015 11:23:22 PM Central)'
+1 0 0 1 29 738.2 Tm
+/Times-Roman 10 Tf
+12 TL
+1 0 0 1 29 726.2 Tm
+1 0 0 1 25 720.2 Tm
+/Helvetica-Bold 12 Tf
+14.4 TL
+(Education Continued  ) '
+1 0 0 1 29 705.8 Tm
+1 0 0 1 29 719.8 Tm
+1 0 0 1 25 713.8 Tm
+/Times-Roman 10 Tf
+12 TL
+1 0 0 1 29 701.8 Tm
+1 0 0 1 29 689.8 Tm
+1 0 0 1 216.33 689.8 Tm
+/Times-Bold 10 Tf
+12 TL
+(Undergraduate  ) '
+1 0 0 1 403.67 689.8 Tm
+(Graduate  ) '
+1 0 0 1 29 677.8 Tm
+(Overall GPA  ) '
+1 0 0 1 216.33 677.8 Tm
+/Times-Roman 10 Tf
+12 TL
+(3.78/  ) '
+1 0 0 1 403.67 677.8 Tm
+(/  ) '
+1 0 0 1 29 665.8 Tm
+/Times-Bold 10 Tf
+12 TL
+(Major GPA  ) '
+1 0 0 1 216.33 665.8 Tm
+/Times-Roman 10 Tf
+12 TL
+(3.78/  ) '
+1 0 0 1 403.67 665.8 Tm
+(/  ) '
+1 0 0 1 29 653.8 Tm
+1 0 0 1 29 641.8 Tm
+1 0 0 1 29 641.8 Tm
+/Times-Bold 10 Tf
+12 TL
+(Highest Degree Attained  ) '
+1 0 0 1 216.33 641.8 Tm
+(Number of graduate hours beyond your )'
+(highest degree:  ) '
+1 0 0 1 403.67 641.8 Tm
+(Grad Program Of Study  ) '
+1 0 0 1 29 617.8 Tm
+/Times-Roman 10 Tf
+12 TL
+(BA/BS/etc.  ) '
+1 0 0 1 216.33 617.8 Tm
+(0  ) '
+1 0 0 1 403.67 617.8 Tm
+(None  ) '
+1 0 0 1 29 605.8 Tm
+1 0 0 1 29 593.8 Tm
+/Times-Bold 10 Tf
+12 TL
+(List honors, awards or distinctions you have earned:  ) '
+/Times-Roman 10 Tf
+12 TL
+(Alpha Beta Kappa Honors Society )'
+(Microsoft Office Master Certification  ) '
+1 0 0 1 29 545.8 Tm
+1 0 0 1 25 539.8 Tm
+/Helvetica-Bold 12 Tf
+14.4 TL
+(Experience  ) '
+1 0 0 1 29 525.4 Tm
+1 0 0 1 29 539.4 Tm
+1 0 0 1 25 533.4 Tm
+/Times-Roman 10 Tf
+12 TL
+1 0 0 1 29 521.4 Tm
+(Please list ALL relevant work experience )'
+(beginning with the most recent. )'
+1 0 0 1 29 485.4 Tm
+1 0 0 1 29 483.4 Tm
+1 0 0 1 29 483.4 Tm
+1 0 0 1 29 483.4 Tm
+/Times-Bold 10 Tf
+12 TL
+(Current or Most Recent Position  ) '
+1 0 0 1 216.33 483.4 Tm
+(Employer Contact Information  ) '
+1 0 0 1 403.67 483.4 Tm
+(Supervisor/Reference Contact )'
+(Information )'
+1 0 0 1 29 459.4 Tm
+1 0 0 1 29 457.9 Tm
+1 0 0 1 29 457.9 Tm
+/Times-Roman 10 Tf
+12 TL
+1 0 0 1 29 457.9 Tm
+(State of Alaska, Division of Senior & )'
+(Disabilities  ) '
+(Senior Services Technician/Office Asst. )'
+(II/Admin Clerk II  ) '
+1 0 0 1 216.33 457.9 Tm
+(550 W 8th Ave )'
+(Anchorage, AK  99501 )'
+(907-269-3666  ) '
+1 0 0 1 403.67 457.9 Tm
+(Jamie Kaiser )'
+(907-269-5026 )'
+(jamie.kaiser@alaska.gov  ) '
+1 0 0 1 29 409.9 Tm
+1 0 0 1 29 421.9 Tm
+1 0 0 1 29 409.9 Tm
+1 0 0 1 29 407.9 Tm
+1 0 0 1 29 407.9 Tm
+1 0 0 1 29 407.9 Tm
+/Times-Bold 10 Tf
+12 TL
+(Date From - Date )'
+(To:  ) '
+1 0 0 1 122.67 407.9 Tm
+/Times-Roman 10 Tf
+12 TL
+(05/2008 - 04/2015  ) '
+1 0 0 1 216.33 407.9 Tm
+/Times-Bold 10 Tf
+12 TL
+(Full or Part Time:  ) '
+1 0 0 1 310 407.9 Tm
+/Times-Roman 10 Tf
+12 TL
+(Full  ) '
+1 0 0 1 403.67 407.9 Tm
+/Times-Bold 10 Tf
+12 TL
+(Last Annual )'
+(Salary:  ) '
+1 0 0 1 497.33 407.9 Tm
+/Times-Roman 10 Tf
+12 TL
+($30,000/yr  ) '
+1 0 0 1 29 383.9 Tm
+1 0 0 1 29 382.2 Tm
+1 0 0 1 29 382.2 Tm
+/Times-Bold 10 Tf
+12 TL
+(Reason for )'
+(Leaving:  ) '
+1 0 0 1 122.66 382.2 Tm
+/Times-Roman 10 Tf
+12 TL
+(seeking career advancement  ) '
+1 0 0 1 29 358.2 Tm
+/Times-Bold 10 Tf
+12 TL
+(May we contact )'
+(this employer?  ) '
+1 0 0 1 122.66 358.2 Tm
+/Times-Roman 10 Tf
+12 TL
+(Yes  ) '
+1 0 0 1 29 334.2 Tm
+/Times-Bold 10 Tf
+12 TL
+(Responsibilities/ )'
+(Accomplishments )'
+(at this Position  ) '
+1 0 0 1 122.66 334.2 Tm
+/Times-Roman 10 Tf
+12 TL
+(*Level one PC troubleshooting, printer maintenance, backup tapes and file management )'
+()'
+(*Familiar with all major PC Based office suites including additional items such as Visio, SharePoint )'
+(\(Administrator\), Adobe and Open Source options. Certified in MS Office. )'
+()'
+(*Work closely with SharePoint development team to ensure Archiving site calculates correct retention as per )'
+(regulations, provide data input and oversee volunteer and staff to complete over 160 boxes sent to storage )'
+()'
+(*Develop unit SharePoint to track internal errors, providing report to management for team development and )'
+(training )'
+()'
+(*Work with IT and Research and Analysis teams to improve main database functionality for connecting )'
+(subcontractors to certified agencies )'
+1 0 0 1 29 178.2 Tm
+1 0 0 1 29 178.2 Tm
+1 0 0 1 29 190.2 Tm
+1 0 0 1 29 178.2 Tm
+1 0 0 1 29 178.2 Tm
+1 0 0 1 29 170.2 Tm
+ET
+endstream
+endobj
+20 0 obj
+<< /Length 0 >>
+stream
+0.2 w
+25 750.2 m
+587 750.2 l
+S
+1 w
+25 736.2 m
+587 736.2 l
+S
+1.2 w
+25 702.8 m
+587 702.8 l
+S
+1.2 w
+25 522.4 m
+587 522.4 l
+S
+0.4 w
+25 483.4 m
+587 483.4 l
+S
+0.4 w
+25 457.733333333333 m
+587 457.733333333333 l
+S
+0.4 w
+25 483.4 m
+25 457.733333333333 l
+S
+0.4 w
+212.333333333333 483.4 m
+212.333333333333 457.733333333333 l
+S
+0.4 w
+399.666666666667 483.4 m
+399.666666666667 457.733333333333 l
+S
+0.4 w
+587 483.4 m
+587 457.733333333333 l
+S
+0.4 w
+25 457.9 m
+587 457.9 l
+S
+0.2 w
+25 457.9 m
+587 457.9 l
+S
+0.2 w
+25 408.233333333333 m
+587 408.233333333333 l
+S
+0.2 w
+25 457.9 m
+25 408.233333333333 l
+S
+0.2 w
+212.333333333333 457.9 m
+212.333333333333 408.233333333333 l
+S
+0.2 w
+399.666666666667 457.9 m
+399.666666666667 408.233333333333 l
+S
+0.2 w
+587 457.9 m
+587 408.233333333333 l
+S
+0.4 w
+25 408.233333333333 m
+587 408.233333333333 l
+S
+0.2 w
+25 407.9 m
+587 407.9 l
+S
+0.2 w
+25 382.233333333333 m
+587 382.233333333333 l
+S
+0.2 w
+25 407.9 m
+25 382.233333333333 l
+S
+0.2 w
+118.666666666667 407.9 m
+118.666666666667 382.233333333333 l
+S
+0.2 w
+212.333333333333 407.9 m
+212.333333333333 382.233333333333 l
+S
+0.2 w
+306 407.9 m
+306 382.233333333333 l
+S
+0.2 w
+399.666666666667 407.9 m
+399.666666666667 382.233333333333 l
+S
+0.2 w
+493.333333333333 407.9 m
+493.333333333333 382.233333333333 l
+S
+0.2 w
+587 407.9 m
+587 382.233333333333 l
+S
+0.2 w
+25 382.2 m
+586.99438 382.2 l
+S
+0.2 w
+25 356.533333333333 m
+586.99438 356.533333333333 l
+S
+0.2 w
+25 332.533333333333 m
+586.99438 332.533333333333 l
+S
+0.2 w
+25 176.533333333333 m
+586.99438 176.533333333333 l
+S
+0.2 w
+25 382.2 m
+25 176.533333333333 l
+S
+0.2 w
+118.66292 382.2 m
+118.66292 176.533333333333 l
+S
+0.2 w
+586.99438 382.2 m
+586.99438 176.533333333333 l
+S
+0.4 w
+25 176.533333333333 m
+587 176.533333333333 l
+S
+0.4 w
+25 457.9 m
+25 176.533333333333 l
+S
+0.4 w
+587 457.9 m
+587 176.533333333333 l
+S
+endstream
+endobj
+
+21 0 obj
+[ ]
+endobj
+
+100006 0 obj <<
+/Parent 2 0 R
+/Dest [18 0 R /XYZ null 726.2 null]
+/Title (Education Continued)
+/Prev 100005 0 R
+/Next 100007 0 R
+>>
+endobj
+100007 0 obj <<
+/Parent 2 0 R
+/Dest [18 0 R /XYZ null 545.8 null]
+/Title (Experience)
+/Prev 100006 0 R
+/Next 100008 0 R
+>>
+endobj
+
+22 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Contents [ 24 0 R 23 0 R ]
+/Annots 25 0 R>>
+endobj
+23 0 obj
+<< /Length 0 >>
+stream
+BT
+/Times-Roman 10 Tf
+12 TL
+1 0 0 1 29 767 Tm
+/Helvetica-Bold 14 Tf
+16.8 TL
+1 0 0 1 83.37 767 Tm
+(Matanuska-Susitna Borough School District Online Application     ) '
+1 0 0 1 29 750.2 Tm
+1 0 0 1 25 750.2 Tm
+/Times-Roman 10 Tf
+12 TL
+1 0 0 1 29 750.2 Tm
+(Darby, Sue   ) '
+1 0 0 1 450.5 750.2 Tm
+(Date Started: 4/18/2015  ) '
+1 0 0 1 250 40 Tm
+(Page 3 of  7)'
+/Times-Roman 8 Tf
+9.6 TL
+1 0 0 1 30 37 Tm
+(Generated at 4/20/2015 11:23:22 PM Central)'
+1 0 0 1 29 738.2 Tm
+/Times-Roman 10 Tf
+12 TL
+1 0 0 1 29 726.2 Tm
+1 0 0 1 25 720.2 Tm
+/Helvetica-Bold 12 Tf
+14.4 TL
+(Experience Continued  ) '
+1 0 0 1 29 705.8 Tm
+1 0 0 1 29 719.8 Tm
+1 0 0 1 25 713.8 Tm
+/Times-Roman 10 Tf
+12 TL
+1 0 0 1 29 701.8 Tm
+1 0 0 1 29 699.8 Tm
+1 0 0 1 29 699.8 Tm
+1 0 0 1 29 699.8 Tm
+/Times-Bold 10 Tf
+12 TL
+(Previous Position Held  ) '
+1 0 0 1 216.33 699.8 Tm
+(Employer Contact Information  ) '
+1 0 0 1 403.67 699.8 Tm
+(Supervisor/Reference Contact )'
+(Information )'
+1 0 0 1 29 675.8 Tm
+1 0 0 1 29 674.3 Tm
+1 0 0 1 29 674.3 Tm
+/Times-Roman 10 Tf
+12 TL
+1 0 0 1 29 674.3 Tm
+(Nine Star Education & Employment  ) '
+(Computer Instructor/Career Development )'
+(Mentor  ) '
+1 0 0 1 216.33 674.3 Tm
+(125 West 5th Ave )'
+(Anchorage, AK  99501 )'
+(\(907\) 279-7827  ) '
+1 0 0 1 403.67 674.3 Tm
+(Kaleem Nuriddin )'
+(907-375-3731 )'
+(kaleemn@ninestar.com  ) '
+1 0 0 1 29 638.3 Tm
+1 0 0 1 29 650.3 Tm
+1 0 0 1 29 638.3 Tm
+1 0 0 1 29 636.3 Tm
+1 0 0 1 29 636.3 Tm
+1 0 0 1 29 636.3 Tm
+/Times-Bold 10 Tf
+12 TL
+(Date From - Date )'
+(To:  ) '
+1 0 0 1 122.67 636.3 Tm
+/Times-Roman 10 Tf
+12 TL
+(04/2006 - 04/2008  ) '
+1 0 0 1 216.33 636.3 Tm
+/Times-Bold 10 Tf
+12 TL
+(Full or Part Time:  ) '
+1 0 0 1 310 636.3 Tm
+/Times-Roman 10 Tf
+12 TL
+(Full  ) '
+1 0 0 1 403.67 636.3 Tm
+/Times-Bold 10 Tf
+12 TL
+(Last Annual )'
+(Salary:  ) '
+1 0 0 1 497.33 636.3 Tm
+/Times-Roman 10 Tf
+12 TL
+($950/mo  ) '
+1 0 0 1 29 612.3 Tm
+1 0 0 1 29 610.6 Tm
+1 0 0 1 29 610.6 Tm
+/Times-Bold 10 Tf
+12 TL
+(Reason for )'
+(Leaving:  ) '
+1 0 0 1 122.66 610.6 Tm
+/Times-Roman 10 Tf
+12 TL
+(End of Contract  ) '
+1 0 0 1 29 586.6 Tm
+/Times-Bold 10 Tf
+12 TL
+(May we contact )'
+(this employer?  ) '
+1 0 0 1 122.66 586.6 Tm
+/Times-Roman 10 Tf
+12 TL
+(Yes  ) '
+1 0 0 1 29 562.6 Tm
+/Times-Bold 10 Tf
+12 TL
+(Responsibilities/ )'
+(Accomplishments )'
+(at this Position  ) '
+1 0 0 1 122.66 562.6 Tm
+/Times-Roman 10 Tf
+12 TL
+(*Maintaining small PC labs )'
+()'
+(*Teaching beginner and intermediate computer classes )'
+()'
+(*Tutoring individuals seeking Microsoft Office Certifications )'
+()'
+(*Interview individuals from all economic statuses and develop resume, CV and cover letters )'
+()'
+(*Track number of clients both for computer classes and career development including attendance and job search )'
+(successes )'
+1 0 0 1 29 442.6 Tm
+1 0 0 1 29 442.6 Tm
+1 0 0 1 29 454.6 Tm
+1 0 0 1 29 442.6 Tm
+1 0 0 1 29 442.6 Tm
+1 0 0 1 29 434.6 Tm
+1 0 0 1 29 434.6 Tm
+/Times-Bold 10 Tf
+12 TL
+(Previous Position Held  ) '
+1 0 0 1 216.33 434.6 Tm
+(Employer Contact Information  ) '
+1 0 0 1 403.67 434.6 Tm
+(Supervisor/Reference Contact )'
+(Information )'
+1 0 0 1 29 410.6 Tm
+1 0 0 1 29 409.1 Tm
+1 0 0 1 29 409.1 Tm
+/Times-Roman 10 Tf
+12 TL
+1 0 0 1 29 409.1 Tm
+(Sue's Tiny Costumes  ) '
+(Owner/Webmaster  ) '
+1 0 0 1 216.33 409.1 Tm
+(900 Josh Dr )'
+(Palmer, AK  99645 )'
+(9077465978  ) '
+1 0 0 1 403.67 409.1 Tm
+(Sue Darby )'
+(9077465978 )'
+(sue@suestinycostumes.com  ) '
+1 0 0 1 29 373.1 Tm
+1 0 0 1 29 385.1 Tm
+1 0 0 1 29 373.1 Tm
+1 0 0 1 29 371.1 Tm
+1 0 0 1 29 371.1 Tm
+1 0 0 1 29 371.1 Tm
+/Times-Bold 10 Tf
+12 TL
+(Date From - Date )'
+(To:  ) '
+1 0 0 1 122.67 371.1 Tm
+/Times-Roman 10 Tf
+12 TL
+(10/1995 - 04/2015  ) '
+1 0 0 1 216.33 371.1 Tm
+/Times-Bold 10 Tf
+12 TL
+(Full or Part Time:   ) '
+1 0 0 1 310 371.1 Tm
+/Times-Roman 10 Tf
+12 TL
+(Part  ) '
+1 0 0 1 403.67 371.1 Tm
+/Times-Bold 10 Tf
+12 TL
+(Last Annual )'
+(Salary:   ) '
+1 0 0 1 497.33 371.1 Tm
+/Times-Roman 10 Tf
+12 TL
+1 0 0 1 29 347.1 Tm
+1 0 0 1 29 345.4 Tm
+1 0 0 1 29 345.4 Tm
+/Times-Bold 10 Tf
+12 TL
+(Reason for )'
+(Leaving:   ) '
+1 0 0 1 122.66 345.4 Tm
+/Times-Roman 10 Tf
+12 TL
+(Hobby based business on hiatus  ) '
+1 0 0 1 29 321.4 Tm
+/Times-Bold 10 Tf
+12 TL
+(May we contact )'
+(this employer?   ) '
+1 0 0 1 122.66 321.4 Tm
+/Times-Roman 10 Tf
+12 TL
+(Yes  ) '
+1 0 0 1 29 297.4 Tm
+/Times-Bold 10 Tf
+12 TL
+(Responsibilities/ )'
+(Accomplishments )'
+(at this Position   ) '
+1 0 0 1 122.66 297.4 Tm
+/Times-Roman 10 Tf
+12 TL
+(*Published author of two books on pattern making for dolls and miniatures )'
+()'
+(*100 published patterns for dolls and miniatures from concept to completion )'
+()'
+(*1st place Alaska State Fair for Little Bo Peep and her Sheep 2005 )'
+()'
+(*www.suestinycostumes.com  ) '
+1 0 0 1 29 213.4 Tm
+1 0 0 1 29 213.4 Tm
+1 0 0 1 29 225.4 Tm
+1 0 0 1 29 213.4 Tm
+1 0 0 1 29 213.4 Tm
+1 0 0 1 29 205.4 Tm
+ET
+endstream
+endobj
+24 0 obj
+<< /Length 0 >>
+stream
+0.2 w
+25 750.2 m
+587 750.2 l
+S
+1 w
+25 736.2 m
+587 736.2 l
+S
+1.2 w
+25 702.8 m
+587 702.8 l
+S
+0.4 w
+25 699.8 m
+587 699.8 l
+S
+0.4 w
+25 674.133333333333 m
+587 674.133333333333 l
+S
+0.4 w
+25 699.8 m
+25 674.133333333333 l
+S
+0.4 w
+212.333333333333 699.8 m
+212.333333333333 674.133333333333 l
+S
+0.4 w
+399.666666666667 699.8 m
+399.666666666667 674.133333333333 l
+S
+0.4 w
+587 699.8 m
+587 674.133333333333 l
+S
+0.4 w
+25 674.3 m
+587 674.3 l
+S
+0.2 w
+25 674.3 m
+587 674.3 l
+S
+0.2 w
+25 636.633333333333 m
+587 636.633333333333 l
+S
+0.2 w
+25 674.3 m
+25 636.633333333333 l
+S
+0.2 w
+212.333333333333 674.3 m
+212.333333333333 636.633333333333 l
+S
+0.2 w
+399.666666666667 674.3 m
+399.666666666667 636.633333333333 l
+S
+0.2 w
+587 674.3 m
+587 636.633333333333 l
+S
+0.4 w
+25 636.633333333333 m
+587 636.633333333333 l
+S
+0.2 w
+25 636.3 m
+587 636.3 l
+S
+0.2 w
+25 610.633333333333 m
+587 610.633333333333 l
+S
+0.2 w
+25 636.3 m
+25 610.633333333333 l
+S
+0.2 w
+118.666666666667 636.3 m
+118.666666666667 610.633333333333 l
+S
+0.2 w
+212.333333333333 636.3 m
+212.333333333333 610.633333333333 l
+S
+0.2 w
+306 636.3 m
+306 610.633333333333 l
+S
+0.2 w
+399.666666666667 636.3 m
+399.666666666667 610.633333333333 l
+S
+0.2 w
+493.333333333333 636.3 m
+493.333333333333 610.633333333333 l
+S
+0.2 w
+587 636.3 m
+587 610.633333333333 l
+S
+0.2 w
+25 610.6 m
+586.99438 610.6 l
+S
+0.2 w
+25 584.933333333333 m
+586.99438 584.933333333333 l
+S
+0.2 w
+25 560.933333333333 m
+586.99438 560.933333333333 l
+S
+0.2 w
+25 440.933333333333 m
+586.99438 440.933333333333 l
+S
+0.2 w
+25 610.6 m
+25 440.933333333333 l
+S
+0.2 w
+118.66292 610.6 m
+118.66292 440.933333333333 l
+S
+0.2 w
+586.99438 610.6 m
+586.99438 440.933333333333 l
+S
+0.4 w
+25 440.933333333333 m
+587 440.933333333333 l
+S
+0.4 w
+25 674.3 m
+25 440.933333333333 l
+S
+0.4 w
+587 674.3 m
+587 440.933333333333 l
+S
+0.4 w
+25 434.6 m
+587 434.6 l
+S
+0.4 w
+25 408.933333333333 m
+587 408.933333333333 l
+S
+0.4 w
+25 434.6 m
+25 408.933333333333 l
+S
+0.4 w
+212.333333333333 434.6 m
+212.333333333333 408.933333333333 l
+S
+0.4 w
+399.666666666667 434.6 m
+399.666666666667 408.933333333333 l
+S
+0.4 w
+587 434.6 m
+587 408.933333333333 l
+S
+0.4 w
+25 409.1 m
+587 409.1 l
+S
+0.2 w
+25 409.1 m
+587 409.1 l
+S
+0.2 w
+25 371.433333333333 m
+587 371.433333333333 l
+S
+0.2 w
+25 409.1 m
+25 371.433333333333 l
+S
+0.2 w
+212.333333333333 409.1 m
+212.333333333333 371.433333333333 l
+S
+0.2 w
+399.666666666667 409.1 m
+399.666666666667 371.433333333333 l
+S
+0.2 w
+587 409.1 m
+587 371.433333333333 l
+S
+0.4 w
+25 371.433333333333 m
+587 371.433333333333 l
+S
+0.2 w
+25 371.1 m
+587 371.1 l
+S
+0.2 w
+25 345.433333333333 m
+587 345.433333333333 l
+S
+0.2 w
+25 371.1 m
+25 345.433333333333 l
+S
+0.2 w
+118.666666666667 371.1 m
+118.666666666667 345.433333333333 l
+S
+0.2 w
+212.333333333333 371.1 m
+212.333333333333 345.433333333333 l
+S
+0.2 w
+306 371.1 m
+306 345.433333333333 l
+S
+0.2 w
+399.666666666667 371.1 m
+399.666666666667 345.433333333333 l
+S
+0.2 w
+493.333333333333 371.1 m
+493.333333333333 345.433333333333 l
+S
+0.2 w
+587 371.1 m
+587 345.433333333333 l
+S
+0.2 w
+25 345.4 m
+586.99438 345.4 l
+S
+0.2 w
+25 319.733333333333 m
+586.99438 319.733333333333 l
+S
+0.2 w
+25 295.733333333333 m
+586.99438 295.733333333333 l
+S
+0.2 w
+25 211.733333333333 m
+586.99438 211.733333333333 l
+S
+0.2 w
+25 345.4 m
+25 211.733333333333 l
+S
+0.2 w
+118.66292 345.4 m
+118.66292 211.733333333333 l
+S
+0.2 w
+586.99438 345.4 m
+586.99438 211.733333333333 l
+S
+0.4 w
+25 211.733333333333 m
+587 211.733333333333 l
+S
+0.4 w
+25 409.1 m
+25 211.733333333333 l
+S
+0.4 w
+587 409.1 m
+587 211.733333333333 l
+S
+endstream
+endobj
+
+25 0 obj
+[ ]
+endobj
+
+100008 0 obj <<
+/Parent 2 0 R
+/Dest [22 0 R /XYZ null 726.2 null]
+/Title (Experience Continued)
+/Prev 100007 0 R
+/Next 100009 0 R
+>>
+endobj
+
+26 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Contents [ 28 0 R 27 0 R ]
+/Annots 29 0 R>>
+endobj
+27 0 obj
+<< /Length 0 >>
+stream
+BT
+/Times-Roman 10 Tf
+12 TL
+1 0 0 1 29 767 Tm
+/Helvetica-Bold 14 Tf
+16.8 TL
+1 0 0 1 83.37 767 Tm
+(Matanuska-Susitna Borough School District Online Application     ) '
+1 0 0 1 29 750.2 Tm
+1 0 0 1 25 750.2 Tm
+/Times-Roman 10 Tf
+12 TL
+1 0 0 1 29 750.2 Tm
+(Darby, Sue   ) '
+1 0 0 1 450.5 750.2 Tm
+(Date Started: 4/18/2015  ) '
+1 0 0 1 250 40 Tm
+(Page 4 of  7)'
+/Times-Roman 8 Tf
+9.6 TL
+1 0 0 1 30 37 Tm
+(Generated at 4/20/2015 11:23:23 PM Central)'
+1 0 0 1 29 738.2 Tm
+/Times-Roman 10 Tf
+12 TL
+1 0 0 1 29 726.2 Tm
+1 0 0 1 25 720.2 Tm
+/Helvetica-Bold 12 Tf
+14.4 TL
+(Professional References  ) '
+1 0 0 1 29 705.8 Tm
+1 0 0 1 29 719.8 Tm
+1 0 0 1 25 713.8 Tm
+/Times-Roman 10 Tf
+12 TL
+1 0 0 1 29 701.8 Tm
+1 0 0 1 29 699.8 Tm
+1 0 0 1 29 699.8 Tm
+1 0 0 1 29 687.8 Tm
+1 0 0 1 29 687.8 Tm
+/Times-Bold 10 Tf
+12 TL
+1 0 0 1 216.33 687.8 Tm
+(Reference 1 of 3  ) '
+1 0 0 1 403.67 687.8 Tm
+(Reference 2 of 3  ) '
+1 0 0 1 29 675.8 Tm
+(Name:  ) '
+1 0 0 1 216.33 675.8 Tm
+/Times-Roman 10 Tf
+12 TL
+(Stacey Buzby  ) '
+1 0 0 1 403.67 675.8 Tm
+/Times-Roman 10 Tf
+12 TL
+(Carol Downey  ) '
+1 0 0 1 29 663.8 Tm
+/Times-Bold 10 Tf
+12 TL
+(School/Org:  ) '
+1 0 0 1 216.33 663.8 Tm
+/Times-Roman 10 Tf
+12 TL
+(Matanuska Susitna Borough School District  ) '
+1 0 0 1 403.67 663.8 Tm
+/Times-Roman 10 Tf
+12 TL
+(State of Alaska, Division of Senior and )'
+(Disabilities Services  ) '
+1 0 0 1 29 639.8 Tm
+/Times-Bold 10 Tf
+12 TL
+(Current Position:  ) '
+1 0 0 1 216.33 639.8 Tm
+/Times-Roman 10 Tf
+12 TL
+(System Administrator  ) '
+1 0 0 1 403.67 639.8 Tm
+/Times-Roman 10 Tf
+12 TL
+(Medical Assist Admin III  ) '
+1 0 0 1 29 627.8 Tm
+/Times-Bold 10 Tf
+12 TL
+(Home Phone:  ) '
+1 0 0 1 216.33 627.8 Tm
+/Times-Roman 10 Tf
+12 TL
+(907-746-1867  ) '
+1 0 0 1 403.67 627.8 Tm
+/Times-Roman 10 Tf
+12 TL
+1 0 0 1 29 615.8 Tm
+/Times-Bold 10 Tf
+12 TL
+(Cell Phone:  ) '
+1 0 0 1 216.33 615.8 Tm
+/Times-Roman 10 Tf
+12 TL
+(907-232-2657  ) '
+1 0 0 1 403.67 615.8 Tm
+/Times-Roman 10 Tf
+12 TL
+(907-440-8054  ) '
+1 0 0 1 29 603.8 Tm
+/Times-Bold 10 Tf
+12 TL
+(Work Phone:  ) '
+1 0 0 1 216.33 603.8 Tm
+/Times-Roman 10 Tf
+12 TL
+(907-761-4008  ) '
+1 0 0 1 403.67 603.8 Tm
+/Times-Roman 10 Tf
+12 TL
+(907-375-8265  ) '
+1 0 0 1 29 591.8 Tm
+/Times-Bold 10 Tf
+12 TL
+(Mailing Address:  ) '
+1 0 0 1 216.33 591.8 Tm
+/Times-Roman 10 Tf
+12 TL
+(P.O. box 2798 )'
+(Palmer 99645  ) '
+1 0 0 1 403.67 591.8 Tm
+/Times-Roman 10 Tf
+12 TL
+(550 W 8th Ave )'
+(Anchorage, AK 99501  ) '
+1 0 0 1 29 567.8 Tm
+/Times-Bold 10 Tf
+12 TL
+(Email:  ) '
+1 0 0 1 216.33 567.8 Tm
+/Times-Roman 10 Tf
+12 TL
+(STACEY.BUZBY@MATSUK12.US )'
+(stbuzby@gmail.com  ) '
+1 0 0 1 403.67 567.8 Tm
+/Times-Roman 10 Tf
+12 TL
+(carol.downey@alaska.gov )'
+(cdowneyhome@aol.com  ) '
+1 0 0 1 29 543.8 Tm
+/Times-Bold 10 Tf
+12 TL
+(Relationship to Candidate:  ) '
+1 0 0 1 216.33 543.8 Tm
+/Times-Roman 10 Tf
+12 TL
+(Personal Reference  ) '
+1 0 0 1 403.67 543.8 Tm
+/Times-Roman 10 Tf
+12 TL
+(Former Supervisor/Current )'
+(Co-worker/Professional Reference  ) '
+1 0 0 1 29 519.8 Tm
+/Times-Bold 10 Tf
+12 TL
+(Years Known:  ) '
+1 0 0 1 216.33 519.8 Tm
+/Times-Roman 10 Tf
+12 TL
+(13 yrs  ) '
+1 0 0 1 403.67 519.8 Tm
+/Times-Roman 10 Tf
+12 TL
+(7  ) '
+1 0 0 1 29 507.8 Tm
+1 0 0 1 29 503.8 Tm
+1 0 0 1 29 503.8 Tm
+/Times-Bold 10 Tf
+12 TL
+1 0 0 1 216.33 503.8 Tm
+(Reference 3 of 3  ) '
+1 0 0 1 403.67 503.8 Tm
+1 0 0 1 29 491.8 Tm
+(Name:  ) '
+1 0 0 1 216.33 491.8 Tm
+/Times-Roman 10 Tf
+12 TL
+(Kaleem Nuriddin  ) '
+1 0 0 1 403.67 491.8 Tm
+/Times-Roman 10 Tf
+12 TL
+1 0 0 1 29 479.8 Tm
+/Times-Bold 10 Tf
+12 TL
+(School/Org:  ) '
+1 0 0 1 216.33 479.8 Tm
+/Times-Roman 10 Tf
+12 TL
+(Nine Star Education & Employment )'
+(Services  ) '
+1 0 0 1 403.67 479.8 Tm
+/Times-Roman 10 Tf
+12 TL
+1 0 0 1 29 455.8 Tm
+/Times-Bold 10 Tf
+12 TL
+(Current Position:  ) '
+1 0 0 1 216.33 455.8 Tm
+/Times-Roman 10 Tf
+12 TL
+(Work Services Assistant Director  ) '
+1 0 0 1 403.67 455.8 Tm
+/Times-Roman 10 Tf
+12 TL
+1 0 0 1 29 443.8 Tm
+/Times-Bold 10 Tf
+12 TL
+(Home Phone:  ) '
+1 0 0 1 216.33 443.8 Tm
+/Times-Roman 10 Tf
+12 TL
+1 0 0 1 403.67 443.8 Tm
+/Times-Roman 10 Tf
+12 TL
+1 0 0 1 29 431.8 Tm
+/Times-Bold 10 Tf
+12 TL
+(Cell Phone:  ) '
+1 0 0 1 216.33 431.8 Tm
+/Times-Roman 10 Tf
+12 TL
+(907-727-9371  ) '
+1 0 0 1 403.67 431.8 Tm
+/Times-Roman 10 Tf
+12 TL
+1 0 0 1 29 419.8 Tm
+/Times-Bold 10 Tf
+12 TL
+(Work Phone:  ) '
+1 0 0 1 216.33 419.8 Tm
+/Times-Roman 10 Tf
+12 TL
+(907-375-3731  ) '
+1 0 0 1 403.67 419.8 Tm
+/Times-Roman 10 Tf
+12 TL
+1 0 0 1 29 407.8 Tm
+/Times-Bold 10 Tf
+12 TL
+(Mailing Address:  ) '
+1 0 0 1 216.33 407.8 Tm
+/Times-Roman 10 Tf
+12 TL
+(125 W 5th Ave )'
+(Anchorage, AK 99501  ) '
+1 0 0 1 403.67 407.8 Tm
+/Times-Roman 10 Tf
+12 TL
+1 0 0 1 29 383.8 Tm
+/Times-Bold 10 Tf
+12 TL
+(Email:  ) '
+1 0 0 1 216.33 383.8 Tm
+/Times-Roman 10 Tf
+12 TL
+(Kaleemn@ninestar.com  ) '
+1 0 0 1 403.67 383.8 Tm
+/Times-Roman 10 Tf
+12 TL
+1 0 0 1 29 371.8 Tm
+/Times-Bold 10 Tf
+12 TL
+(Relationship to Candidate:  ) '
+1 0 0 1 216.33 371.8 Tm
+/Times-Roman 10 Tf
+12 TL
+(Former Supervisor/Professional Reference  ) '
+1 0 0 1 403.67 371.8 Tm
+/Times-Roman 10 Tf
+12 TL
+1 0 0 1 29 359.8 Tm
+/Times-Bold 10 Tf
+12 TL
+(Years Known:  ) '
+1 0 0 1 216.33 359.8 Tm
+/Times-Roman 10 Tf
+12 TL
+(8  ) '
+1 0 0 1 403.67 359.8 Tm
+/Times-Roman 10 Tf
+12 TL
+1 0 0 1 29 347.8 Tm
+1 0 0 1 29 343.8 Tm
+1 0 0 1 29 331.8 Tm
+1 0 0 1 29 331.8 Tm
+1 0 0 1 25 325.8 Tm
+/Helvetica-Bold 12 Tf
+14.4 TL
+(Additional Information  ) '
+1 0 0 1 29 311.4 Tm
+1 0 0 1 29 325.4 Tm
+1 0 0 1 25 319.4 Tm
+/Times-Roman 10 Tf
+12 TL
+1 0 0 1 29 307.4 Tm
+1 0 0 1 29 305.4 Tm
+1 0 0 1 29 305.4 Tm
+/Times-Roman 10 Tf
+12 TL
+1 0 0 1 29 305.4 Tm
+1 0 0 1 29 293.4 Tm
+()'
+(List any additional information which will help in determining your professional qualifications for a position. ) Tj
+1 0 0 1 29 281.4 Tm
+1 0 0 1 29 276.4 Tm
+1 0 0 1 29 276.4 Tm
+(Associate of Applied Science Degree )'
+(Computer Science: Concentration in Business Applications )'
+(Business Management Practice )'
+(In addition to the Bachelor degrees  ) '
+1 0 0 1 29 228.4 Tm
+1 0 0 1 29 228.4 Tm
+1 0 0 1 29 233.4 Tm
+1 0 0 1 422.4 233.4 Tm
+1 0 0 1 29 209.4 Tm
+1 0 0 1 29 197.4 Tm
+1 0 0 1 29 197.4 Tm
+1 0 0 1 25 191.4 Tm
+/Helvetica-Bold 12 Tf
+14.4 TL
+(Disclosures \(Non-Certified\)  ) '
+1 0 0 1 29 177 Tm
+1 0 0 1 29 191 Tm
+1 0 0 1 25 185 Tm
+/Times-Roman 10 Tf
+12 TL
+1 0 0 1 29 173 Tm
+1 0 0 1 29 171 Tm
+1 0 0 1 29 171 Tm
+/Times-Roman 10 Tf
+12 TL
+1 0 0 1 29 171 Tm
+()'
+(*  Have you ever failed to be rehired, been asked to resign a position, resigned to avoid ) Tj
+T*
+(termination, or been terminated from employment? ) Tj
+1 0 0 1 29 147 Tm
+1 0 0 1 29 156 Tm
+1 0 0 1 422.4 171 Tm
+0 0 0 rg
+(No  ) '
+0 0 0 rg
+1 0 0 1 29 144 Tm
+1 0 0 1 29 132 Tm
+()'
+(If yes, please explain: ) Tj
+1 0 0 1 29 120 Tm
+1 0 0 1 29 115 Tm
+1 0 0 1 29 115 Tm
+1 0 0 1 29 103 Tm
+1 0 0 1 29 103 Tm
+1 0 0 1 29 108 Tm
+1 0 0 1 422.4 108 Tm
+1 0 0 1 422.4 91 Tm
+1 0 0 1 29 67 Tm
+ET
+endstream
+endobj
+28 0 obj
+<< /Length 0 >>
+stream
+0.2 w
+25 750.2 m
+587 750.2 l
+S
+1 w
+25 736.2 m
+587 736.2 l
+S
+1.2 w
+25 702.8 m
+587 702.8 l
+S
+0.2 w
+25 687.8 m
+587 687.8 l
+S
+0.2 w
+25 674.133333333333 m
+587 674.133333333333 l
+S
+0.2 w
+25 662.133333333333 m
+587 662.133333333333 l
+S
+0.2 w
+25 638.133333333333 m
+587 638.133333333333 l
+S
+0.2 w
+25 626.133333333333 m
+587 626.133333333333 l
+S
+0.2 w
+25 614.133333333333 m
+587 614.133333333333 l
+S
+0.2 w
+25 602.133333333333 m
+587 602.133333333333 l
+S
+0.2 w
+25 590.133333333333 m
+587 590.133333333333 l
+S
+0.2 w
+25 566.133333333333 m
+587 566.133333333333 l
+S
+0.2 w
+25 542.133333333333 m
+587 542.133333333333 l
+S
+0.2 w
+25 518.133333333333 m
+587 518.133333333333 l
+S
+0.2 w
+25 506.133333333333 m
+587 506.133333333333 l
+S
+0.2 w
+25 687.8 m
+25 506.133333333333 l
+S
+0.2 w
+212.333333333333 687.8 m
+212.333333333333 506.133333333333 l
+S
+0.2 w
+399.666666666667 687.8 m
+399.666666666667 506.133333333333 l
+S
+0.2 w
+587 687.8 m
+587 506.133333333333 l
+S
+0.2 w
+25 503.8 m
+587 503.8 l
+S
+0.2 w
+25 490.133333333333 m
+587 490.133333333333 l
+S
+0.2 w
+25 478.133333333333 m
+587 478.133333333333 l
+S
+0.2 w
+25 454.133333333333 m
+587 454.133333333333 l
+S
+0.2 w
+25 442.133333333333 m
+587 442.133333333333 l
+S
+0.2 w
+25 430.133333333333 m
+587 430.133333333333 l
+S
+0.2 w
+25 418.133333333333 m
+587 418.133333333333 l
+S
+0.2 w
+25 406.133333333333 m
+587 406.133333333333 l
+S
+0.2 w
+25 382.133333333333 m
+587 382.133333333333 l
+S
+0.2 w
+25 370.133333333333 m
+587 370.133333333333 l
+S
+0.2 w
+25 358.133333333333 m
+587 358.133333333333 l
+S
+0.2 w
+25 346.133333333333 m
+587 346.133333333333 l
+S
+0.2 w
+25 503.8 m
+25 346.133333333333 l
+S
+0.2 w
+212.333333333333 503.8 m
+212.333333333333 346.133333333333 l
+S
+0.2 w
+399.666666666667 503.8 m
+399.666666666667 346.133333333333 l
+S
+0.2 w
+587 503.8 m
+587 346.133333333333 l
+S
+1.2 w
+25 308.4 m
+587 308.4 l
+S
+.75 .75 .75 RG
+0.2 w
+25 276.4 m
+587 276.4 l
+S
+0.2 w
+25 226.733333333333 m
+587 226.733333333333 l
+S
+0.2 w
+25 276.4 m
+25 226.733333333333 l
+S
+0.2 w
+587 276.4 m
+587 226.733333333333 l
+S
+0 0 0 RG
+1.2 w
+25 174 m
+587 174 l
+S
+.75 .75 .75 RG
+0.002 w
+415 170 m
+587 170 l
+S
+0.002 w
+415 170 m
+415 143 l
+S
+0.002 w
+587 170 m
+587 143 l
+S
+0.002 w
+415 143 m
+587 143 l
+S
+0 0 0 RG
+.75 .75 .75 RG
+0.2 w
+25 115 m
+587 115 l
+S
+0.2 w
+25 101.333333333333 m
+587 101.333333333333 l
+S
+0.2 w
+25 115 m
+25 101.333333333333 l
+S
+0.2 w
+587 115 m
+587 101.333333333333 l
+S
+0 0 0 RG
+0.01 w
+25 86 m
+587 86 l
+S
+endstream
+endobj
+
+29 0 obj
+[ ]
+endobj
+
+100009 0 obj <<
+/Parent 2 0 R
+/Dest [26 0 R /XYZ null 726.2 null]
+/Title (Professional References)
+/Prev 100008 0 R
+/Next 100010 0 R
+>>
+endobj
+100010 0 obj <<
+/Parent 2 0 R
+/Dest [26 0 R /XYZ null 331.8 null]
+/Title (Additional Information)
+/Prev 100009 0 R
+/Next 100011 0 R
+>>
+endobj
+100011 0 obj <<
+/Parent 2 0 R
+/Dest [26 0 R /XYZ null 197.4 null]
+/Title (Disclosures \(Non-Certified\))
+/Prev 100010 0 R
+/Next 100012 0 R
+>>
+endobj
+
+30 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Contents [ 32 0 R 31 0 R ]
+/Annots 33 0 R>>
+endobj
+31 0 obj
+<< /Length 0 >>
+stream
+BT
+/Times-Roman 10 Tf
+12 TL
+1 0 0 1 29 767 Tm
+/Helvetica-Bold 14 Tf
+16.8 TL
+1 0 0 1 83.37 767 Tm
+(Matanuska-Susitna Borough School District Online Application     ) '
+1 0 0 1 29 750.2 Tm
+1 0 0 1 25 750.2 Tm
+/Times-Roman 10 Tf
+12 TL
+1 0 0 1 29 750.2 Tm
+(Darby, Sue   ) '
+1 0 0 1 450.5 750.2 Tm
+(Date Started: 4/18/2015  ) '
+1 0 0 1 250 40 Tm
+(Page 5 of  7)'
+/Times-Roman 8 Tf
+9.6 TL
+1 0 0 1 30 37 Tm
+(Generated at 4/20/2015 11:23:23 PM Central)'
+1 0 0 1 29 738.2 Tm
+/Times-Roman 10 Tf
+12 TL
+1 0 0 1 29 726.2 Tm
+1 0 0 1 25 720.2 Tm
+/Helvetica-Bold 12 Tf
+14.4 TL
+(Disclosures \(Non-Certified\) continued  ) '
+1 0 0 1 29 705.8 Tm
+1 0 0 1 29 719.8 Tm
+1 0 0 1 25 713.8 Tm
+/Times-Roman 10 Tf
+12 TL
+1 0 0 1 29 701.8 Tm
+1 0 0 1 29 699.8 Tm
+1 0 0 1 29 699.8 Tm
+1 0 0 1 29 699.8 Tm
+()'
+(Are you a relative of any board member, administrator, or supervisor who is currently serving ) Tj
+T*
+(the School District? ) Tj
+1 0 0 1 29 675.8 Tm
+1 0 0 1 29 684.8 Tm
+1 0 0 1 422.4 699.8 Tm
+0 0 0 rg
+(No  ) '
+0 0 0 rg
+1 0 0 1 29 672.8 Tm
+()'
+(Name: ) Tj
+1 0 0 1 29 660.8 Tm
+1 0 0 1 29 669.8 Tm
+1 0 0 1 422.4 672.8 Tm
+0 0 0 rg
+0 0 0 rg
+1 0 0 1 29 657.8 Tm
+()'
+(Position: ) Tj
+1 0 0 1 29 645.8 Tm
+1 0 0 1 29 654.8 Tm
+1 0 0 1 422.4 657.8 Tm
+0 0 0 rg
+0 0 0 rg
+1 0 0 1 29 642.8 Tm
+()'
+(Relationship: ) Tj
+1 0 0 1 29 630.8 Tm
+1 0 0 1 29 639.8 Tm
+1 0 0 1 422.4 642.8 Tm
+0 0 0 rg
+0 0 0 rg
+1 0 0 1 422.4 622.8 Tm
+1 0 0 1 29 610.8 Tm
+()'
+(*  Can you perform all the essential job function\(s\) of the position\(s\) for which you are ) Tj
+T*
+(applying, with or without reasonable accomodation? ) Tj
+1 0 0 1 29 586.8 Tm
+1 0 0 1 29 595.8 Tm
+1 0 0 1 422.4 610.8 Tm
+0 0 0 rg
+(Yes  ) '
+0 0 0 rg
+1 0 0 1 29 583.8 Tm
+1 0 0 1 29 571.8 Tm
+()'
+(List any accomodations: ) Tj
+1 0 0 1 29 559.8 Tm
+1 0 0 1 29 554.8 Tm
+1 0 0 1 29 554.8 Tm
+(Ergonomic keyboard, mouse, chair & desk.  ) '
+1 0 0 1 29 542.8 Tm
+1 0 0 1 29 542.8 Tm
+1 0 0 1 29 547.8 Tm
+1 0 0 1 422.4 547.8 Tm
+1 0 0 1 29 523.8 Tm
+1 0 0 1 29 511.8 Tm
+1 0 0 1 29 511.8 Tm
+1 0 0 1 25 505.8 Tm
+/Helvetica-Bold 12 Tf
+14.4 TL
+(Legal Information  ) '
+1 0 0 1 29 491.4 Tm
+1 0 0 1 29 505.4 Tm
+1 0 0 1 25 499.4 Tm
+/Times-Roman 10 Tf
+12 TL
+1 0 0 1 29 487.4 Tm
+1 0 0 1 29 485.4 Tm
+1 0 0 1 29 485.4 Tm
+/Times-Roman 10 Tf
+12 TL
+1 0 0 1 29 485.4 Tm
+()'
+(Please note: Applicants are not obligated to disclose sealed or expunged records of conviction or arrest. ) Tj
+1 0 0 1 422.4 485.4 Tm
+1 0 0 1 29 473.4 Tm
+()'
+(*  Are you eligible to work in the United States? ) Tj
+1 0 0 1 29 461.4 Tm
+1 0 0 1 29 470.4 Tm
+1 0 0 1 422.4 473.4 Tm
+0 0 0 rg
+(Yes  ) '
+0 0 0 rg
+1 0 0 1 422.4 453.4 Tm
+1 0 0 1 29 441.4 Tm
+()'
+(*  Have you ever been convicted of, or received a suspended imposition of sentence for a ) Tj
+T*
+(misdemeanor? ) Tj
+1 0 0 1 29 417.4 Tm
+1 0 0 1 29 426.4 Tm
+1 0 0 1 422.4 441.4 Tm
+0 0 0 rg
+(No  ) '
+0 0 0 rg
+1 0 0 1 29 414.4 Tm
+1 0 0 1 29 402.4 Tm
+()'
+(If yes, describe in full and list the date\(s\), city and state in which convicted. ) Tj
+1 0 0 1 29 390.4 Tm
+1 0 0 1 29 385.4 Tm
+1 0 0 1 29 385.4 Tm
+1 0 0 1 29 373.4 Tm
+1 0 0 1 29 373.4 Tm
+1 0 0 1 29 378.4 Tm
+1 0 0 1 422.4 378.4 Tm
+1 0 0 1 29 366.4 Tm
+()'
+() Tj
+/Times-Roman 8 Tf
+9.6 TL
+(Please Note: A conviction will not necessarily bar you from employment. Facts, such as date of occurrence and rehabilitation will be considered. This information will ) Tj
+T*
+(be used only for job-related purposes and only to the extent permitted by applicable law.) Tj
+/Times-Roman 10 Tf
+12 TL
+0 0 0 rg
+1 0 0 1 422.4 366.4 Tm
+1 0 0 1 422.4 339.8 Tm
+1 0 0 1 29 327.8 Tm
+()'
+(*  Have you ever been convicted of, or received a suspended imposition of sentence for a ) Tj
+T*
+(felony? ) Tj
+1 0 0 1 29 303.8 Tm
+1 0 0 1 29 312.8 Tm
+1 0 0 1 422.4 327.8 Tm
+0 0 0 rg
+(No  ) '
+0 0 0 rg
+1 0 0 1 29 300.8 Tm
+1 0 0 1 29 288.8 Tm
+()'
+(If yes, describe in full and list the date\(s\), city and state in which convicted. ) Tj
+1 0 0 1 29 276.8 Tm
+1 0 0 1 29 271.8 Tm
+1 0 0 1 29 271.8 Tm
+1 0 0 1 29 259.8 Tm
+1 0 0 1 29 259.8 Tm
+1 0 0 1 29 264.8 Tm
+1 0 0 1 422.4 264.8 Tm
+1 0 0 1 422.4 247.8 Tm
+1 0 0 1 29 235.8 Tm
+()'
+(*  Have you ever been involuntarily released, non-retained, or asked to resign from a position ) Tj
+T*
+(for any reason? ) Tj
+1 0 0 1 29 211.8 Tm
+1 0 0 1 29 220.8 Tm
+1 0 0 1 422.4 235.8 Tm
+0 0 0 rg
+(No  ) '
+0 0 0 rg
+1 0 0 1 29 208.8 Tm
+1 0 0 1 29 196.8 Tm
+()'
+(If yes, describe in full. ) Tj
+1 0 0 1 29 184.8 Tm
+1 0 0 1 29 179.8 Tm
+1 0 0 1 29 179.8 Tm
+1 0 0 1 29 167.8 Tm
+1 0 0 1 29 167.8 Tm
+1 0 0 1 29 172.8 Tm
+1 0 0 1 422.4 172.8 Tm
+1 0 0 1 29 160.8 Tm
+()'
+(*  Have you ever had any license or certification of any kind \(teaching certificate or ) Tj
+T*
+(otherwise\) revoked or suspended, or have you in any way been sanctioned by, or is any charge ) Tj
+T*
+(or complaint now pending against you by any licensing, certification or other regulatory ) Tj
+T*
+(agency or body, public or private? ) Tj
+1 0 0 1 29 112.8 Tm
+1 0 0 1 29 121.8 Tm
+1 0 0 1 422.4 160.8 Tm
+0 0 0 rg
+(No  ) '
+0 0 0 rg
+1 0 0 1 29 97.8 Tm
+ET
+endstream
+endobj
+32 0 obj
+<< /Length 0 >>
+stream
+0.2 w
+25 750.2 m
+587 750.2 l
+S
+1 w
+25 736.2 m
+587 736.2 l
+S
+1.2 w
+25 702.8 m
+587 702.8 l
+S
+.75 .75 .75 RG
+0.002 w
+415 698.8 m
+587 698.8 l
+S
+0.002 w
+415 698.8 m
+415 671.8 l
+S
+0.002 w
+587 698.8 m
+587 671.8 l
+S
+0.002 w
+415 671.8 m
+587 671.8 l
+S
+0 0 0 RG
+.75 .75 .75 RG
+0.002 w
+415 671.8 m
+587 671.8 l
+S
+0.002 w
+415 671.8 m
+415 656.8 l
+S
+0.002 w
+587 671.8 m
+587 656.8 l
+S
+0.002 w
+415 656.8 m
+587 656.8 l
+S
+0 0 0 RG
+.75 .75 .75 RG
+0.002 w
+415 656.8 m
+587 656.8 l
+S
+0.002 w
+415 656.8 m
+415 641.8 l
+S
+0.002 w
+587 656.8 m
+587 641.8 l
+S
+0.002 w
+415 641.8 m
+587 641.8 l
+S
+0 0 0 RG
+.75 .75 .75 RG
+0.002 w
+415 641.8 m
+587 641.8 l
+S
+0.002 w
+415 641.8 m
+415 626.8 l
+S
+0.002 w
+587 641.8 m
+587 626.8 l
+S
+0.002 w
+415 626.8 m
+587 626.8 l
+S
+0 0 0 RG
+0.01 w
+25 617.8 m
+587 617.8 l
+S
+.75 .75 .75 RG
+0.002 w
+415 609.8 m
+587 609.8 l
+S
+0.002 w
+415 609.8 m
+415 582.8 l
+S
+0.002 w
+587 609.8 m
+587 582.8 l
+S
+0.002 w
+415 582.8 m
+587 582.8 l
+S
+0 0 0 RG
+.75 .75 .75 RG
+0.2 w
+25 554.8 m
+587 554.8 l
+S
+0.2 w
+25 541.133333333333 m
+587 541.133333333333 l
+S
+0.2 w
+25 554.8 m
+25 541.133333333333 l
+S
+0.2 w
+587 554.8 m
+587 541.133333333333 l
+S
+0 0 0 RG
+1.2 w
+25 488.4 m
+587 488.4 l
+S
+.75 .75 .75 RG
+0.002 w
+415 472.4 m
+587 472.4 l
+S
+0.002 w
+415 472.4 m
+415 457.4 l
+S
+0.002 w
+587 472.4 m
+587 457.4 l
+S
+0.002 w
+415 457.4 m
+587 457.4 l
+S
+0 0 0 RG
+0.01 w
+25 448.4 m
+587 448.4 l
+S
+.75 .75 .75 RG
+0.002 w
+415 440.4 m
+587 440.4 l
+S
+0.002 w
+415 440.4 m
+415 413.4 l
+S
+0.002 w
+587 440.4 m
+587 413.4 l
+S
+0.002 w
+415 413.4 m
+587 413.4 l
+S
+0 0 0 RG
+.75 .75 .75 RG
+0.2 w
+25 385.4 m
+587 385.4 l
+S
+0.2 w
+25 371.733333333333 m
+587 371.733333333333 l
+S
+0.2 w
+25 385.4 m
+25 371.733333333333 l
+S
+0.2 w
+587 385.4 m
+587 371.733333333333 l
+S
+0 0 0 RG
+0.01 w
+25 334.8 m
+587 334.8 l
+S
+.75 .75 .75 RG
+0.002 w
+415 326.8 m
+587 326.8 l
+S
+0.002 w
+415 326.8 m
+415 299.8 l
+S
+0.002 w
+587 326.8 m
+587 299.8 l
+S
+0.002 w
+415 299.8 m
+587 299.8 l
+S
+0 0 0 RG
+.75 .75 .75 RG
+0.2 w
+25 271.8 m
+587 271.8 l
+S
+0.2 w
+25 258.133333333333 m
+587 258.133333333333 l
+S
+0.2 w
+25 271.8 m
+25 258.133333333333 l
+S
+0.2 w
+587 271.8 m
+587 258.133333333333 l
+S
+0 0 0 RG
+0.01 w
+25 242.8 m
+587 242.8 l
+S
+.75 .75 .75 RG
+0.002 w
+415 234.8 m
+587 234.8 l
+S
+0.002 w
+415 234.8 m
+415 207.8 l
+S
+0.002 w
+587 234.8 m
+587 207.8 l
+S
+0.002 w
+415 207.8 m
+587 207.8 l
+S
+0 0 0 RG
+.75 .75 .75 RG
+0.2 w
+25 179.8 m
+587 179.8 l
+S
+0.2 w
+25 166.133333333333 m
+587 166.133333333333 l
+S
+0.2 w
+25 179.8 m
+25 166.133333333333 l
+S
+0.2 w
+587 179.8 m
+587 166.133333333333 l
+S
+0 0 0 RG
+.75 .75 .75 RG
+0.002 w
+415 159.8 m
+587 159.8 l
+S
+0.002 w
+415 159.8 m
+415 108.8 l
+S
+0.002 w
+587 159.8 m
+587 108.8 l
+S
+0.002 w
+415 108.8 m
+587 108.8 l
+S
+0 0 0 RG
+endstream
+endobj
+
+33 0 obj
+[ ]
+endobj
+
+100012 0 obj <<
+/Parent 2 0 R
+/Dest [30 0 R /XYZ null 726.2 null]
+/Title (Disclosures \(Non-Certified\) continued)
+/Prev 100011 0 R
+/Next 100013 0 R
+>>
+endobj
+100013 0 obj <<
+/Parent 2 0 R
+/Dest [30 0 R /XYZ null 511.8 null]
+/Title (Legal Information)
+/Prev 100012 0 R
+/Next 100014 0 R
+>>
+endobj
+
+34 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Contents [ 36 0 R 35 0 R ]
+/Annots 37 0 R>>
+endobj
+35 0 obj
+<< /Length 0 >>
+stream
+BT
+/Times-Roman 10 Tf
+12 TL
+1 0 0 1 29 767 Tm
+/Helvetica-Bold 14 Tf
+16.8 TL
+1 0 0 1 83.37 767 Tm
+(Matanuska-Susitna Borough School District Online Application     ) '
+1 0 0 1 29 750.2 Tm
+1 0 0 1 25 750.2 Tm
+/Times-Roman 10 Tf
+12 TL
+1 0 0 1 29 750.2 Tm
+(Darby, Sue   ) '
+1 0 0 1 450.5 750.2 Tm
+(Date Started: 4/18/2015  ) '
+1 0 0 1 250 40 Tm
+(Page 6 of  7)'
+/Times-Roman 8 Tf
+9.6 TL
+1 0 0 1 30 37 Tm
+(Generated at 4/20/2015 11:23:23 PM Central)'
+1 0 0 1 29 738.2 Tm
+/Times-Roman 10 Tf
+12 TL
+1 0 0 1 29 726.2 Tm
+1 0 0 1 25 720.2 Tm
+/Helvetica-Bold 12 Tf
+14.4 TL
+(Legal Information continued  ) '
+1 0 0 1 29 705.8 Tm
+1 0 0 1 29 719.8 Tm
+1 0 0 1 25 713.8 Tm
+/Times-Roman 10 Tf
+12 TL
+1 0 0 1 29 701.8 Tm
+1 0 0 1 29 699.8 Tm
+1 0 0 1 29 699.8 Tm
+1 0 0 1 29 699.8 Tm
+1 0 0 1 29 687.8 Tm
+()'
+(If yes, describe in full. ) Tj
+1 0 0 1 29 675.8 Tm
+1 0 0 1 29 670.8 Tm
+1 0 0 1 29 670.8 Tm
+1 0 0 1 29 658.8 Tm
+1 0 0 1 29 658.8 Tm
+1 0 0 1 29 663.8 Tm
+1 0 0 1 422.4 663.8 Tm
+1 0 0 1 422.4 646.8 Tm
+1 0 0 1 29 622.8 Tm
+1 0 0 1 25 616.8 Tm
+/Helvetica-Bold 12 Tf
+14.4 TL
+(Equal Opportunity Employer  ) '
+1 0 0 1 29 602.4 Tm
+1 0 0 1 29 616.4 Tm
+1 0 0 1 25 610.4 Tm
+/Times-Roman 10 Tf
+12 TL
+1 0 0 1 29 598.4 Tm
+1 0 0 1 29 608.4 Tm
+1 0 0 1 29 608.4 Tm
+1 0 0 1 29 596.4 Tm
+()'
+(The Matanuska-Susitna Borough School District is an Equal Opportunity Employer and complies with Title IX of the Education ) Tj
+T*
+(Amendment Act of 1972, with the Americans with Disabilities Act, and with all other state and federal employment laws.  The ) Tj
+T*
+(Matanuska-Susitna Borough School District does not discriminate against any person on the basis of race, religion, color, national ) Tj
+T*
+(origin, age, disability, gender, marital status, changes in marital status, pregnancy or parenthood.  Should you need any assistance for ) Tj
+T*
+(any reason during any stage of the employment process,  please discuss your needs with a member of the Human Resource ) Tj
+T*
+(Department.  Every effort will be made to reasonably accommodate you in this process. ) Tj
+1 0 0 1 422.4 596.4 Tm
+1 0 0 1 422.4 519.4 Tm
+1 0 0 1 29 495.4 Tm
+1 0 0 1 25 489.4 Tm
+/Helvetica-Bold 12 Tf
+14.4 TL
+(Applicant's Acknowledgment and Agreement  ) '
+1 0 0 1 29 475 Tm
+1 0 0 1 29 489 Tm
+1 0 0 1 25 483 Tm
+/Times-Roman 10 Tf
+12 TL
+1 0 0 1 29 471 Tm
+1 0 0 1 29 481 Tm
+1 0 0 1 29 481 Tm
+1 0 0 1 29 469 Tm
+()'
+(By checking the box below, I hereby certify that all information made on or in connection with this application is true and complete to ) Tj
+T*
+(the best of my knowledge and belief and that I have not knowingly withheld any fact or circumstance.  I understand that any ) Tj
+T*
+(misrepresentation or concealment of material fact or if any false information is furnished it will be sufficient grounds for rejection of ) Tj
+T*
+(my application or my removal from employment.  ) Tj
+1 0 0 1 29 421 Tm
+T*
+() Tj
+1 0 0 1 29 409 Tm
+T*
+(I authorize the investigation of all statements contained herein and understand that any documents relevant to this information may be ) Tj
+T*
+(reviewed by the agents of the Mat-Su Borough School District.  An inquiry may be made to include confirmation and information as ) Tj
+T*
+(to my character, general reputation, personal characteristics, previous employers, educational background, current and previous ) Tj
+T*
+(residence location for the past five years, military service and conviction records.) Tj
+1 0 0 1 29 361 Tm
+T*
+() Tj
+1 0 0 1 29 349 Tm
+T*
+(I have never been involuntarily released from any position, nor have I been asked to resign for any reason.  I have not committed any ) Tj
+T*
+(criminal act of child abuse or molestation or any sexual abuse of a minor; any act involving the illegal use or abuse of a controlled ) Tj
+T*
+(substance; any criminal act involving the use or abuse of alcohol; or any other crime of immorality \(which means any act involving a ) Tj
+T*
+(crime of moral turpitude under the Laws of the State of Alaska\).) Tj
+1 0 0 1 29 301 Tm
+T*
+() Tj
+1 0 0 1 29 289 Tm
+T*
+(If I have been involved in any of the situations listed above, I have attached to this application a description of the events and an ) Tj
+T*
+(explaination why I believe such situation should not adversely affect my application for employment.) Tj
+1 0 0 1 29 265 Tm
+T*
+() Tj
+1 0 0 1 29 253 Tm
+T*
+(I authorize my present and previous employers and listed references to release to the Mat-Su Borough School District any information ) Tj
+T*
+(they may have regarding my character, background, or my employment record.  I release these individuals and their agents from any ) Tj
+T*
+(damage or claim for furnishing said information.  I am aware that Alaska Statute 12.62.035 provides that an employer may obtain ) Tj
+T*
+(from the Alaska Commission on Criminal Justice a record of all convictions, and that a favorable record check will be a condition of ) Tj
+T*
+(any offer of employment made by the MSBSD.  I understand that employment with the MSBSD requires the approval of the Human ) Tj
+T*
+(Resource Director.  Employment offers are made only by the District's Human Resource Department and must be ratified by the ) Tj
+T*
+(School Board. ) Tj
+1 0 0 1 422.4 469 Tm
+1 0 0 1 29 157 Tm
+ET
+endstream
+endobj
+36 0 obj
+<< /Length 0 >>
+stream
+0.2 w
+25 750.2 m
+587 750.2 l
+S
+1 w
+25 736.2 m
+587 736.2 l
+S
+1.2 w
+25 702.8 m
+587 702.8 l
+S
+.75 .75 .75 RG
+0.2 w
+25 670.8 m
+587 670.8 l
+S
+0.2 w
+25 657.133333333333 m
+587 657.133333333333 l
+S
+0.2 w
+25 670.8 m
+25 657.133333333333 l
+S
+0.2 w
+587 670.8 m
+587 657.133333333333 l
+S
+0 0 0 RG
+0.01 w
+25 641.8 m
+587 641.8 l
+S
+1.2 w
+25 599.4 m
+587 599.4 l
+S
+0.01 w
+25 514.4 m
+587 514.4 l
+S
+1.2 w
+25 472 m
+587 472 l
+S
+endstream
+endobj
+
+37 0 obj
+[ ]
+endobj
+
+100014 0 obj <<
+/Parent 2 0 R
+/Dest [34 0 R /XYZ null 726.2 null]
+/Title (Legal Information continued)
+/Prev 100013 0 R
+/Next 100015 0 R
+>>
+endobj
+100015 0 obj <<
+/Parent 2 0 R
+/Dest [34 0 R /XYZ null 622.8 null]
+/Title (Equal Opportunity Employer)
+/Prev 100014 0 R
+/Next 100016 0 R
+>>
+endobj
+100016 0 obj <<
+/Parent 2 0 R
+/Dest [34 0 R /XYZ null 495.4 null]
+/Title (Applicant's Acknowledgment and Agreement)
+/Prev 100015 0 R
+/Next 100017 0 R
+>>
+endobj
+
+38 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Contents [ 40 0 R 39 0 R ]
+/Annots 41 0 R>>
+endobj
+39 0 obj
+<< /Length 0 >>
+stream
+BT
+/Times-Roman 10 Tf
+12 TL
+1 0 0 1 29 767 Tm
+/Helvetica-Bold 14 Tf
+16.8 TL
+1 0 0 1 83.37 767 Tm
+(Matanuska-Susitna Borough School District Online Application     ) '
+1 0 0 1 29 750.2 Tm
+1 0 0 1 25 750.2 Tm
+/Times-Roman 10 Tf
+12 TL
+1 0 0 1 29 750.2 Tm
+(Darby, Sue   ) '
+1 0 0 1 450.5 750.2 Tm
+(Date Started: 4/18/2015  ) '
+1 0 0 1 250 40 Tm
+(Page 7 of  7)'
+/Times-Roman 8 Tf
+9.6 TL
+1 0 0 1 30 37 Tm
+(Generated at 4/20/2015 11:23:23 PM Central)'
+1 0 0 1 29 738.2 Tm
+/Times-Roman 10 Tf
+12 TL
+1 0 0 1 29 726.2 Tm
+1 0 0 1 29 726.2 Tm
+%%% Max Depth = 680
+1 0 0 1 29 726.2 Tm
+0 0 0 rg
+(I, Sue Darby, agree to all of the terms above. )'
+0 0 0 rg
+1 0 0 1 310 726.2 Tm
+1 0 0 1 322 726.2 Tm
+(I agree  ) '
+1 0 0 1 29 714.2 Tm
+1 0 0 1 29 702.2 Tm
+1 0 0 1 29 690.2 Tm
+ET
+endstream
+endobj
+40 0 obj
+<< /Length 0 >>
+stream
+0.2 w
+25 750.2 m
+587 750.2 l
+S
+1 w
+25 736.2 m
+587 736.2 l
+S
+0.2 w
+309 714.2 m
+309 723.2 l
+S
+0.2 w
+309 723.2 m
+318 723.2 l
+S
+0.2 w
+318 723.2 m
+318 714.2 l
+S
+0.2 w
+318 714.2 m
+309 714.2 l
+S
+0.9 w
+310 715.2 m
+317 722.2 l
+S
+0.9 w
+310 722.2 m
+317 715.2 l
+S
+endstream
+endobj
+
+41 0 obj
+[ ]
+endobj
+
+%%PAGES%%28
+%%PAGELINKS%%14 0 R 18 0 R 22 0 R 26 0 R 30 0 R 34 0 R 38 0 R  EOL
+100017 0 obj <<
+/Parent 2 0 R
+/Title (---)
+/Prev 100016 0 R
+>>
+endobj
+2 0 obj
+<<
+/Type /Outlines
+/Count 18
+/First 100000 0 R
+/Last 100017 0 R
+>>
+endobj
+3 0 obj
+<<
+/Type /Pages
+/Count 7
+/Kids [14 0 R 18 0 R 22 0 R 26 0 R 30 0 R 34 0 R 38 0 R  ]
+/Resources 
+<< 
+/Font 
+<<
+/Times-Roman 4 0 R
+/Times-Bold 5 0 R
+/Helvetica 6 0 R
+/Helvetica-Bold 7 0 R
+/Barcode39 8 0 R
+>> 
+/ProcSet [/PDF /Text] >>
+/MediaBox [0 0 612 792]
+>>
+endobj
+4 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /Times-Roman
+/BaseFont /Times-Roman
+>>
+endobj
+5 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /Times-Bold
+/BaseFont /Times-Bold
+>>
+endobj
+6 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /Helvetica
+/BaseFont /Helvetica
+>>
+endobj
+7 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /Helvetica-Bold
+/BaseFont /Helvetica-Bold
+>>
+endobj
+8 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/Name /Barcode39
+/BaseFont /ABCDEE+Free#203#20of#209
+/Encoding /WinAnsiEncoding /FontDescriptor 10 0 R /FirstChar 32 /LastChar 90 /Widths 9 0 R
+>>
+endobj
+9 0 obj
+[ 383 0 0 0 0 0 0 0 0 0 383 0 0 0 0 0 383 383 383 383 383 383 0 383 0 383 0 0 0 0 0 0 0 383 383 383 383 383 383 383 383 383 383 383 383 383 383 383 383 383 383 383 383 383 383 383 383 383 383]  
+endobj
+10 0 obj
+<</Type/FontDescriptor/FontName/ABCDEE+Free#203#20of#209/Flags 32/ItalicAngle 0/Ascent 752/Descent 0/CapHeight 752/AvgWidth 383/MaxWidth 357/FontWeight 400/XHeight 250/StemV 38/FontBBox[ 0 0 357 752] /FontFile2 11 0 R>>
+endobj
+11 0 obj
+<</Metadata 12 0 R/Filter/FlateDecode/Length 1201/Length1 4216>>
+stream
+xú≠W_hEˇÕŒ^˛¥±=Ω*ßºí ¡@öx´ºRM%±àœdszó;.◊6ß>ƒWŸÿ‡CEA≈Ö>Ñæ¯rE≈?§”A4è"Qõƒo˛‹ﬁdswﬁ^ùavæ˘fˆ∑ﬂ|ˇf¿,É#qÍÙÒ^[{˝WÄw|&ü.≤7ÿg4ﬁ†q.ì´Ã}˚˘?√Äı8p≠¨õûçüø~äÊ>•ˆPñ=?q1˛ô⁄@6_^‚Q¢¿ñËÒrÆ0ì~‚óß.∑]„|z©àq'Õ˜–8±êŒªﬂ_ÓY9ÙçD±∞X&π®D'Ñ¨Tﬁy:∫2}¯—?ÄòÂ õoOâﬁ⁄Ï≤˜L–{ä√Ô°ácm"Xòƒ>é#à‘ﬁe´z∂qÈmÃ^ú+ã.Åi%Éñ$⁄Èˇ)ñﬁ≈“!ìΩç3‘ﬂÅ(q,íh ˜ì˛∆^ƒÙÓÆîRF$ÔÑ‰@˜Óª◊d˝n˜õFö—<ß¬Z…˛€ìéCÉ?5ﬂ´Û=Oî…JÇﬂçÉ8åòöèQc∫	˙Ü„T=ogŸq¨îÁeÍﬂÿ€ö†”(‹Ë≠M«ŸÆ:NV¡UÖ0˚‡ö ∆å∆ïllÀÛ∂/{[ï†Ì¢3vËÀ∏Ê8bü$î@≠∂D≥Éh±ÄlÏY	±≥Ïy÷ÛAŸÏ.¸uÛød„¢uT…&Ùˆ1ôc£°‚Z„ôÕÍ#ê-RaÓƒïàat«˘‰Œ_"ΩIÒ§Í:ê.fˆÜ%ñõ9]KŸjH Áî%6§|Î∑®9±S%Õ@öcÉ·ΩŒ¥ÆUV8YÂ«GX¿Sÿ†“ﬂ~<bøkJ∂ùx›[:â≤ò±_ë™“M¬h/iÿ¥∂Î˜îMï9Bd3b}?)KWmÊ'mËÕœ5?Ii‘¸nè]ÎôS⁄µS<3*DXoæ[ﬁûó`Tl5¡ã∂±⁄nuZ_ùÇ∫cW˝ó6åâ´!clC∆´Húe„X/ÆOûêx¡®`fT∞’<e_\U˘≥E\¥ëÔÇq°èÿ[äﬂSÍq2òŸ)¶£B¯ùlËvëπNƒXQ∫ØN,ùúæu?±%Rz-j√˛;ô>r√0Å»ÏùÈÕ∑Bü
+´™∞BË?1ﬁø?◊≠˚Á√vÎ?±¶˛[?¡‘/ÏÜJ'€gBú∞…˛Ω˛°5W≠˝Ì4ì•q<Ü9¨`?2ŒÜ®NP≠∞˜ŸWÏ7+n•¨åµb≠Yõ‹ÊC¸4ï»øÊø€w€);k_¥Øÿ◊#vd(2©»˙A‰KU	=ä/¸õ@Ø`$}Ø¶-⁄Gü¶π¡∑:B+böÓ2¯›D›+n-∂¿^¿†¶Ó¬%M[8ÑõöÊH—çS—6Ócöé Œ˙4M' {F”›«•ìÖb•4ü…ñ«›nÊ\.]örKãÛÖÖƒË»»d)=ÎÊ”•≥8âä®†ÑydêEônIüP•;“›îxÖfxiö+”
+h¸ı9Ã–xòF'àŒQ?·£, ëKΩKÿÁÈ9K+ü$⁄•ö@íZÅ,ò†ØºKœIöI”yÍK8Îœ7ˇrc4ı›Œ—*ÅÙ¶§ã$[ÅÙ-ˆ6L∑¿—6ﬂØ≠J cÍŒﬁ∫¸òÄÃõendstream
+endobj
+12 0 obj
+<</Type/Metadata/Subtype/XML/Length 1641>>
+<?xpacket begin="Ôªø" id="W5M0MpCehiHzreSzNTczkc9d"?><x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="3.1-701">
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:Description rdf:about=""  xmlns:xmp="http://ns.adobe.com/xap/1.0/">
+<xmp:Title>Free 3 of 9</xmp:Title></rdf:Description>
+<rdf:Description rdf:about=""  xmlns:xmpRights="http://ns.adobe.com/xap/1.0/rights/">
+<xmpRights:Copyright>Unknown</xmpRights:Copyright><xmpRights:Marked>True</xmpRights:Marked><xmpRights:Owner>Unknown</xmpRights:Owner><xmpRights:UsageTerms>Unknown</xmpRights:UsageTerms></rdf:Description>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+</rdf:RDF></x:xmpmeta><?xpacket end="w"?>
+endstream
+endobj
+trailer
+<<
+/Root 1 0 R
+>>
+%%EOF
